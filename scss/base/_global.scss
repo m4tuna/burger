@@ -1,1 +1,14 @@
 // _global.scss
+
+
+$breakpoints: (
+  'xs':  ( max-width:  300px ),
+  'sm':  ( min-width:  767px ),
+  'sm-only':  ( max-width:  767px ),
+  'md': ( min-width:  992px ),
+  'md-only': ( max-width:  992px ),
+  'lg':  ( min-width: 1200px ),
+  'lg-only':  ( max-width: 1200px ),
+  'xl':  ( min-width: 1400px ),
+  'lg-only':  ( max-width: 1400px )
+) !default;
