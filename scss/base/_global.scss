@@ -1,3 +1,4 @@
+// burger
 // _global.scss
 
 
@@ -10,5 +11,24 @@ $breakpoints: (
   'lg':  ( min-width: 1200px ),
   'lg-only':  ( max-width: 1200px ),
   'xl':  ( min-width: 1400px ),
-  'lg-only':  ( max-width: 1400px )
+  'lg-only':  ( max-width: 1400px ),
+  'ie9-only': ( only screen and (min-width:0\0) ),
+  'ie10-up': ( all and (-ms-high-contrast: none), (-ms-high-contrast: active) )
 ) !default;
+
+//-default font
+$default-font: $sans;
+$heading-font: $default-font;
+
+//-standard colors
+$black: #000;
+$blue: #495B7E;
+$white: #fff;
+$red: #ca2026;
+$yellow: #ffd850;
+$purple: #6b1769;
+$pink: #eb2048;
+$green: #4ebd45;
+$orange: #ff9e04;
+$grey: #a6a6a6;
+$brown: #614126;

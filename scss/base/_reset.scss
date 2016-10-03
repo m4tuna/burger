@@ -5,30 +5,23 @@
   base/_reset.scss
 --------------------------------------------------------
 
-  This reset institutes the border-box box model and then
-  block and margin/padding resets.
-
-  Throughout Skyline, each partial has it's own resets.
-  This allows you to only use what you need.
-
-  Credit goes to Normalize
+  Credit: Normalize
+  Edited by: Halo Media
   http://normalize.css v2.1.0 http://git.io/normalize
 
 --------------------------------------------------------- */
 
 // Apply the new box model definition & reset to no margin on anything
 * {
+   -webkit-tap-highlight-color:rgba(0,0,0,0);
   &,
   &:before,
   &:after{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    @include border-box;
     padding: 0;
     margin: 0;
   }
 }
-
 
 // Apply display block to new HTML5 elements
 article,
@@ -49,18 +42,15 @@ video {
     display: block;
 }
 
-// Admin Bar Reset
-#navbar-administration {
-	div, span, ul, li, p, a { font-size:inherit; margin:inherit; }
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.tabs {
-  background:transparent;
-  border-width:0 0 1px 0;
-  width:100%;
-  a {
-      background-color: #9f9fa1;
-      color: #fff;
-      font-weight: bold;
-  }
+a img {
+  border:none;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
 }

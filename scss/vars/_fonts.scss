@@ -1,0 +1,76 @@
+// ==========================================================================
+// Load in Fonts
+// ==========================================================================
+
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300');
+@import url('//fonts.googleapis.com/css?family=Lato');
+
+//-font family
+$sans: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$lato: 'Lato', sans-serif;
+
+//-body
+$body-fsz: 14px;
+$body-fw: 'normal';
+$body-font: $sans;
+
+//-header
+$header-fsz: 14px;
+$header-fw: 'normal';
+$header-font: $default-font;
+
+//-headings
+$heading-transform: null;
+$h1-fsz: 45px;
+$h2-fsz: 35px;
+$h3-fsz: 25px;
+$h4-fsz: 20px;
+$h5-fsz: 18px;
+$h6-fsz: 15px;
+
+//-section
+$section-fsz: 14px;
+$section-fw: 'normal';
+$section-font: $default-font;
+
+//-social
+$social-fsz: 30px;
+
+//-article
+$article-fsz: 14px;
+$article-fw: 'normal';
+$article-font: $default-font;
+
+//-nav
+$nav-fsz: 14px;
+$nav-fw: 'normal';
+$nav-link-font: $default-font;
+
+//-mobile nav
+$mobile-nav-fsz: 20px;
+$nav-toggle-fsz: 28px;
+
+//-hero
+$hero-fsz: 14px;
+$hero-fw: 'normal';
+$hero-font: $default-font;
+
+//-main
+$main-fsz: 14px;
+$main-fw: 'normal';
+$main-font: $default-font;
+
+//-sidebar
+$sidebar-fsz: 14px;
+$sidebar-fw: 'normal';
+$sidebar-font: $default-font;
+
+//-footer
+$footer-fsz: 12px;
+$footer-fw: 'normal';
+$footer-tt: uppercase;
+$footer-font: $default-font;
+
+//-buttons
+$btn-font: $default-font;

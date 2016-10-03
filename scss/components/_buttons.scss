@@ -1,1 +1,16 @@
-// buttons
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+// Buttons
+
+@mixin button($padding, $text-color, $font, $border-radius, $hover-time) {
+  padding:$padding;
+  color:$text-color;
+  font-family:$font;
+  text-decoration: none;
+  border-radius: $border-radius;
+  text-align: center;
+  cursor:pointer;
+  @include transition-all($hover-time);
+}

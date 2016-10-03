@@ -10,7 +10,7 @@ $col-widths: ();
         $w: ($j/$i);
 
         @if not index($col-widths, $w) {
-            .col-#{$j}-#{$i} {
+            .column-#{$j}-#{$i} {
                 width: $w * 100%;
                 padding:$grid-column-gutter;
             }

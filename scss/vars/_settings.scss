@@ -1,0 +1,39 @@
+// Settingss
+
+// Header type: stacked, inline, none
+$header-type: 'stacked';
+
+//-dev
+$dev-mode: false;
+
+//-font smoothing for retina
+$font-smoothing: true;
+
+//-logo
+$logo-hover-fade: true;
+
+//-body
+$full-width-tablet-portrait: false;
+$tablet-portrait-is-mobile: true;
+
+//-nav
+$mobile-nav: true;
+$mobile-nav-on-tablet: true;
+
+//-header
+$fixed-header: true;
+$scroll-header: false;
+$full-width-header-mobile: true;
+
+//-main
+$full-width-main-mobile: true;
+
+//-footer
+$full-width-footer-mobile: false;
+$sticky-footer: true;
+$footer-list-reset: true;
+$footer-list-inline: true;
+
+//-sidebar
+$add-sidebar: false;
+$fixed-sidebar: true;

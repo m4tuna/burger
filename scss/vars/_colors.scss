@@ -1,0 +1,141 @@
+// ==========================================================================
+// Color Config
+// ==========================================================================
+
+//-light colors
+$light-purple: #F5F5FF;
+$light-blue: #588bcd;
+$light-brown: #c89863;
+$light-grey: #efefef;
+$light-green: #E3FFE6;
+$light-orange: #f8d148;
+
+//-other colors
+$off-white: #f4f6f8;
+$fb-blue: #495699;
+$tw-blue: #4099ff;
+$yt-red: #a8462a;
+$insta-blue: #455b84;
+$walmart-blue: #007cc2;
+
+//-body
+$body-bg-color: $mg-black;
+$body-text-color: $mg-black;
+$backdrop: rgba(0, 0, 0, 0.65);
+
+//-global link
+$link-color: $mg-white;
+$link-hover: $mg-grey;
+
+//-nav
+$nav-bg-color: transparent;
+$nav-link-color: $mg-white;
+$nav-li-bg-color: transparent;
+
+//-logo text color
+$logo-color: null;
+
+//-headings
+$heading-color: null;
+$h1-color: $mg-white;
+$h2-color: $mg-white;
+$h3-color: $mg-white;
+$h4-color: $mg-white;
+$h5-color: $mg-white;
+$h6-color: $mg-white;
+
+//-header
+$header-bg-color: $mg-black;
+$header-text-color: $mg-white;
+$header-link-color: $link-color;
+$header-link-hover: $link-hover;
+
+//-mobile nav
+$mobile-nav-color: $mg-black;
+$mobile-nav-link-color: $link-color;
+$mobile-nav-link-hover: $link-hover;
+
+
+//-hero
+$hero-bg-color: $mg-blue;
+$hero-text-color: $mg-white;
+
+//-main
+$main-bg-color: transparent;
+$main-text-color: $mg-white;
+$main-link-color: $link-color;
+$main-link-hover: $link-hover;
+
+//-section
+$section-bg-color: $mg-black;
+$section-text-color: $mg-white;
+$section-link-color: $link-color;
+$section-link-hover: $link-hover;
+
+//-article
+$article-bg-color: $mg-black;
+$article-text-color: $mg-white;
+$article-link-color: $link-color;
+$article-link-hover: $link-hover;
+
+//-footer
+$footer-bg-color: transparent;
+$footer-text-color: $mg-white;
+$footer-link-color: $link-color;
+$footer-link-hover: $link-hover;
+
+//-sidebar
+$sidebar-bg-color: $mg-black;
+$sidebar-text-color: $mg-white;
+$sidebar-link-color: $link-color;
+$sidebar-link-hover: $link-hover;
+
+//-buttons
+$btn-text-color: $mg-black;
+$btn-border-size: 2px;
+$btn-border-style: solid;
+$btn-border-color: transparent;
+
+//-buttons mapping
+$btn-colors: (
+  btn-black: $mg-black,
+  btn-blue: $mg-blue,
+  btn-white: $mg-white,
+  btn-grey: $mg-grey,
+  btn-pink: $mg-pink,
+  btn-red: $mg-red,
+  btn-yellow: $mg-yellow,
+  btn-purple: $mg-purple,
+  btn-orange: $mg-orange
+);
+
+@each $btn-color, $color in $btn-colors {
+  .btn.#{$btn-color} {
+    background-color:#{$color};
+  }
+}
+
+//-social icons
+$social-bg-color: $mg-white;
+$social-text-color: $mg-black;
+$social-hover-color: $mg-blue;
+
+//-table
+$table-header-color: $mg-white;
+$table-th-bg: $mg-white;
+
+$table-tr-bg: $mg-white;
+$table-tr-color: $mg-black;
+
+$table-tr-odd-bg: $mg-grey;
+$table-tr-odd-color: $mg-white;
+
+
+//-code
+$code-bg-color: rgba(193, 199, 208, .3);
+
+//-form
+$input-border: $mg-grey;
+$error-border: $mg-red;
+$error-bg: $light-grey;
+$modal-bg-color: $mg-white;

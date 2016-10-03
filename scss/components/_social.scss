@@ -1,0 +1,30 @@
+// ==========================================================================
+// Social Links
+// ==========================================================================
+
+#social {
+  @extend %list-reset;
+  @extend %list-inline;
+  margin:$social-margin;
+  font-size:$social-fsz;
+  line-height:$social-fsz+2;
+  iframe {
+    position: relative;
+    top: 8px;
+  }
+  a {
+    background:$social-bg-color;
+    color:$social-text-color;
+    padding:$social-link-padding;
+    border-radius:$social-border-radius;
+    font-size:$social-fsz;
+    line-height:$social-fsz+2;
+    @include transition-all($social-hover-time);
+    &.tw, &.yt {
+      padding:$social-extras-padding;
+    }
+    &:hover {
+      color:$social-hover-color;
+    }
+  }
+}

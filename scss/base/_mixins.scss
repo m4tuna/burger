@@ -1,11 +1,79 @@
+// burger
 // _mixins.scss
 
+/// Shorthand for placeholder text.
+@mixin placeholder($placeholder-color, $placeholder-font) {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $placeholder-color;
+    font-family: $placeholder-font;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $placeholder-color;
+    font-family: $placeholder-font;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $placeholder-color;
+    font-family: $placeholder-font;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $placeholder-color;
+    font-family: $placeholder-font;
+  }
+}
+
+
+/// Shorthand for positioning.
+/// @param {String} $type - Position type (either absolute, fixed or relative)
+/// @param {Length} $top     [null] - Top offset
+/// @param {Length} $right   [null] - Right offset
+/// @param {Length} $bottom  [null] - Bottom offset
+/// @param {Length} $left    [null] - Left offset
+/// @example @include position(fixed, $top: 0, $left: 0);
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+/// Sets the width and height.
+/// @param {Value} $width - Value for width
+/// @param {Value} $height [$width] - Value for height
+/// @example @include size(100%, 100%);
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/// Shortcut for transitions
+/// @param {String} $transition - speed property easing
+@mixin transition($transition...) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes: ("-webkit", "");
+  @each $prefix in $prefixes {
+    #{$prefix}-transition: $transition;
+  }
+  transition: $transition;
+}
+
+/// Filter Shortcuts
+/// @param {Color} $var - filter property
+/// @example scss - Filter Mixin
+///   @include filter(blur(50px));
+@mixin filter( $var ) {
+  -webkit-filter: $var;
+  -moz-filter: $var;
+  -ms-filter: $var;
+  -o-filter: $var;
+  filter:$var;
+}
 
 /// Mixin to manage responsive breakpoints
 /// @author Hugo Giraudel
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
-@mixin respond-to($breakpoint) {
+@mixin breakpoint($breakpoint) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {
     // Prints a media query based on the value
