@@ -18,124 +18,91 @@ $yt-red: #a8462a;
 $insta-blue: #455b84;
 $walmart-blue: #007cc2;
 
-//-body
-$body-bg-color: $black;
-$body-text-color: $black;
-$backdrop: rgba(0, 0, 0, 0.65);
 
-//-global link
-$link-color: $white;
-$link-hover: $grey;
-
-//-nav
-$nav-bg-color: transparent;
-$nav-link-color: $white;
-$nav-li-bg-color: transparent;
-
-//-logo text color
-$logo-color: null;
-
-//-headings
-$heading-color: null;
-$h1-color: $white;
-$h2-color: $white;
-$h3-color: $white;
-$h4-color: $white;
-$h5-color: $white;
-$h6-color: $white;
-
-//-header
-$header-bg-color: $black;
-$header-text-color: $white;
-$header-link-color: $link-color;
-$header-link-hover: $link-hover;
-
-//-mobile nav
-$mobile-nav-color: $black;
-$mobile-nav-link-color: $link-color;
-$mobile-nav-link-hover: $link-hover;
-
-
-//-hero
-$hero-bg-color: $blue;
-$hero-text-color: $white;
-
-//-main
-$main-bg-color: transparent;
-$main-text-color: $white;
-$main-link-color: $link-color;
-$main-link-hover: $link-hover;
-
-//-section
-$section-bg-color: $black;
-$section-text-color: $white;
-$section-link-color: $link-color;
-$section-link-hover: $link-hover;
-
-//-article
-$article-bg-color: $black;
-$article-text-color: $white;
-$article-link-color: $link-color;
-$article-link-hover: $link-hover;
-
-//-footer
-$footer-bg-color: transparent;
-$footer-text-color: $white;
-$footer-link-color: $link-color;
-$footer-link-hover: $link-hover;
-
-//-sidebar
-$sidebar-bg-color: $black;
-$sidebar-text-color: $white;
-$sidebar-link-color: $link-color;
-$sidebar-link-hover: $link-hover;
-
-//-buttons
-$btn-text-color: $black;
-$btn-border-size: 2px;
-$btn-border-style: solid;
-$btn-border-color: transparent;
-
-//-buttons mapping
-$btn-colors: (
-  btn-black: $black,
-  btn-blue: $blue,
-  btn-white: $white,
-  btn-grey: $grey,
-  btn-pink: $pink,
-  btn-red: $red,
-  btn-yellow: $yellow,
-  btn-purple: $purple,
-  btn-orange: $orange
+$palettes: (
+    light: (
+      border: #eee,
+      txt: #fff,
+      link: #111,
+      headers: #fff,
+      body-bg: #f9f9fa,
+      header-bg: #000,
+      sidebar-bg: transparent,
+      content-bg: transparent,
+      node-bg: #fff,
+      footer-bg: #000
+    ),
+    dark: (
+      border: #2f2f2f,
+      txt: #ccc,
+      link: #eee,
+      headers: #fff,
+      body-bg: #19191a,
+      header-bg: #000,
+      sidebar-bg: #141415,
+      content-bg: #0f0f11,
+      node-bg: #0f0f11,
+      footer-bg: #000
+    ),
+    socials: (
+      facebook: #3b5998,
+      tumblr: #35465c,
+      google: #dd4b39,
+      googleplus: #dd4b39,
+      instagram: #517fa4,
+      lastfm: #d51007,
+      linkedin: #007bb6,
+      pinterest: #cb2027,
+      rdio: #0088da,
+      soundcloud: #f60,
+      twitter: #00aced,
+      youtube: #b00,
+      spotify: #6ae368,
+      foursquare: #0072b1,
+      deezer: #0f0f11,
+      email: #3f3f44
+    )
 );
 
-@each $btn-color, $color in $btn-colors {
-  .btn.#{$btn-color} {
-    background-color:#{$color};
-  }
+/// Social Color Palette Map
+$socials: map-get($palettes, 'socials');
+
+/// Theme Color Palette Map To Use - options: light | dark
+/// @type Color
+$current_theme: 'light';
+$dark-theme: false;
+
+@if $dark-theme {
+  $current_theme: 'dark';
 }
 
-//-social icons
-$social-bg-color: $white;
-$social-text-color: $black;
-$social-hover-color: $blue;
-
-//-table
-$table-header-color: $white;
-$table-th-bg: $white;
-
-$table-tr-bg: $white;
-$table-tr-color: $black;
-
-$table-tr-odd-bg: $grey;
-$table-tr-odd-color: $white;
-
-
-//-code
-$code-bg-color: rgba(193, 199, 208, .3);
-
-//-form
-$input-border: $grey;
-$error-border: $red;
-$error-bg: $light-grey;
-$modal-bg-color: $white;
+/// Border Color
+/// @type Color
+$color__border: clr($current_theme, border);
+/// Text Color
+/// @type Color
+$color__text: clr($current_theme, txt);
+/// link Color
+/// @type Color
+$color__link: clr($current_theme, link);
+/// Header (h1, h2, etc) Text Color
+/// @type Color
+$color__headers: clr($current_theme, headers);
+/// Body Background Color
+/// @type Color
+$color__body-bg: clr($current_theme, body-bg);
+/// Header Background Color
+/// @type Color
+$color__header-bg: clr($current_theme, header-bg);
+/// Sidebar Background Color
+/// @type Color
+$color__sidebar-bg: clr($current_theme, sidebar-bg);
+/// Content Background Color
+/// @type Color
+$color__content-bg: clr($current_theme, content-bg);
+/// Node Background Color
+/// @type Color
+$color__node-bg: clr($current_theme, node-bg);
+/// Footer Background Color
+/// @type Color
+$color__footer-bg: clr($current_theme, footer-bg);

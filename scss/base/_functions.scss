@@ -1,1 +1,17 @@
 // _functions.scss
+
+/// retrieve color from $colors map ie. `clr(light, border)`
+/// @param {string} $color-name - description
+/// @param {string} $color-variant - description
+/// @example scss - clr function
+///   clr(socials, facebook)
+///   // #3b5998
+@function clr($color-name, $color-variant:null) {
+  /// color variant is optional
+  @if ($color-variant != null) {
+    /// map inception
+    @return map-get(map-get($palettes, $color-name), $color-variant);
+    } @else {
+      @return map-get($palettes, $color-name);
+  }
+}

@@ -33,21 +33,22 @@
 // CENTER
 // usage: @extend %center;
 
-%center {
+%center,
+.center {
   text-align:center;
 }
 
 // RIGHT
 // usage: @extend %right;
 
-%right {
+%right, .right {
   text-align:right;
 }
 
 // LEFT
 // usage: @extend %left;
 
-%left {
+%left, .left {
   text-align:left;
 }
 
@@ -55,21 +56,21 @@
 // FLOAT RIGHT
 // usage: @extend %float-right;
 
-%float-right {
+%float-right, .float-right {
   float:right;
 }
 
 // FLOAT LEFT
 // usage: @extend %float-left;
 
-%float-left {
+%float-left, .float-left {
   float:left;
 }
 
 // LIST INLINE
 // usage: @extend %list-inline;
 
-%list-inline {
+%list-inline, .list-inline {
   list-style-type:none;
   li {
     display:inline;
@@ -103,7 +104,7 @@
 // LIST RESET
 // usage: @extend %list-reset;
 
-%list-reset {
+%list-reset, .list-reset {
   list-style-type:none;
   li {
     a {

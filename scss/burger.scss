@@ -2,20 +2,24 @@
 // Author: Mike Fortuna
 // Date: 10/3/2016
 
+
+
+
 // Libs
 @import 'libs/flex-grid'; // Flex Grid
 @import 'libs/flex'; // Flexbox mixins
-@import 'libs/animate/animate.scss'; // Animate.scss
+@import 'libs/animate/animate'; // Animate.scss
+@import 'libs/fa/font-awesome'; // Fontawesome.scss
 
 // Base
-@import 'base/mixins';
-@import 'base/global';
-@import 'base/functions'; 
 @import 'base/classes';
+@import 'base/mixins';
+@import 'base/functions';
 @import 'base/reset';
 @import 'base/float-grid'; // A fallback for those not ready for the ways of the flex
 
 // Vars
+@import 'base/global';
 @import 'vars/animations';
 @import 'vars/colors';
 @import 'vars/dimensions';
@@ -53,15 +57,9 @@
 @import 'components/tooltips';
 
 // MODULES
+//
+// docs only
+@import 'modules/docs';
 
 // Boiler
 @import 'modules/boiler/boiler';
-
-// Drupal
-/* @import 'modules/drupal/drupal'; */
-
-// Ionic
-/* @import 'modules/ionic/ionic'; */
-
-// Wordpress
-/* @import 'modules/wordpress/wordpress'; */

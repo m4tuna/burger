@@ -1,0 +1,66 @@
+// docs
+
+body.docs {
+  background:$color__body-bg;
+  /* For demo only */
+  header, footer {
+    margin:1em auto;
+    text-align: center;
+  }
+  .item {
+    background-color: CornflowerBlue;
+    border-radius: 2px;
+    display: block;
+    height: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  hr {
+    margin: 2em auto;
+  }
+  .contain {
+    max-width: 45em;
+    margin:2em auto;
+    background:$primary;
+    padding: 2em;
+  }
+  p {
+    font-size:14px;
+    color:$color__text;
+    margin-bottom:1em;
+  }
+  nav ul {
+    margin: 1em auto;
+    li {
+      color:$secondary;
+      margin: 0 1em;
+      &:after {
+        content: '/';
+        display: none;
+      }
+    }
+  }
+  footer {
+    p {
+      color:$grey;
+      font-size:12px;
+      text-transform: lowercase;
+    }
+  }
+}
+
+
+// For docs
+
+header {
+  @include flex-center(flex, column);
+  height:750px;
+  text-align: center;
+}
+
+@include breakpoint(sm-only) {
+  img {
+    width:100%;
+    height:auto;
+  }
+}

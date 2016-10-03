@@ -1,6 +1,7 @@
 // burger
 // _global.scss
 
+$current_theme: 'light';
 
 $breakpoints: (
   'xs':  ( max-width:  300px ),
@@ -18,8 +19,10 @@ $breakpoints: (
 
 //-default font
 $sans: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-$default-font: $sans;
+$rail: 'Raleway', sans-serif;
+$default-font: $rail;
 $heading-font: $default-font;
+$nav-font: $default-font;
 
 //-standard colors
 $black: #000;
@@ -33,3 +36,6 @@ $green: #4ebd45;
 $orange: #ff9e04;
 $grey: #a6a6a6;
 $brown: #614126;
+
+$primary: #806126;
+$secondary: #d84f25;
