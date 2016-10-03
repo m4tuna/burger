@@ -7,6 +7,22 @@ body.docs {
     margin:1em auto;
     text-align: center;
   }
+  h2, h3, h4 {
+    margin: 1em 0;
+  }
+  header {
+    @include flex-center(flex, column);
+    height:750px;
+    text-align: center;
+  }
+
+  @include breakpoint(sm-only) {
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+
   .item {
     background-color: CornflowerBlue;
     border-radius: 2px;
@@ -24,7 +40,7 @@ body.docs {
     background:$primary;
     padding: 2em;
   }
-  p {
+  .contain p {
     font-size:14px;
     color:$color__text;
     margin-bottom:1em;
@@ -46,21 +62,5 @@ body.docs {
       font-size:12px;
       text-transform: lowercase;
     }
-  }
-}
-
-
-// For docs
-
-header {
-  @include flex-center(flex, column);
-  height:750px;
-  text-align: center;
-}
-
-@include breakpoint(sm-only) {
-  img {
-    width:100%;
-    height:auto;
   }
 }
