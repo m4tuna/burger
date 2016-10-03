@@ -1,0 +1,50 @@
+// ==========================================================================
+// Images
+// Note: Vars used here need to be defined in global/_define.scss
+// ==========================================================================
+//-body
+$body-bg-image:'' ;
+$body-bg-attachment: none ;
+$body-bg-position: 0 0;
+$body-bg-repeat: no-repeat;
+$body-bg-size: cover;
+
+//-banners
+$current-header-img:'%%zonk%%';
+$headerimg: $current-header-img;
+
+$header-bg-size: cover;
+$header-bg-position: center center;
+
+//-sprite
+$naut-sprite: '%%spritesheet%%';
+
+//-tabmenu
+$tab-menu-left-img: $naut-sprite;
+$tab-menu-left-bg-position: -208px -48px;
+$tab-menu-left-padding: 48px;
+$tab-menu-left-height: 48px;
+$tab-menu-left-width: 40px;
+$tab-menu-left-bgsize: initial;
+$tab-menu-left-hover-bp: -208px -96px;
+
+//-sidebar
+$sidebar-img: '%%sidebar%%';
+
+$sidebar-img-height: 230px;
+$sidebar-img-bg-size: contain;
+$sidebar-img-bg-repeat: no-repeat;
+
+$sidebar-bg-image: '';
+$sidebar-bg-attachment: none;
+$sidebar-bg-position: 0 0;
+$sidebar-bg-repeat: no-repeat;
+$sidebar-bg-size: cover;
+
+//-links
+
+//-footer
+$footer-img-attachment: none;
+$footer-img-position: bottom 100px center;
+$footer-img-repeat: no-repeat;
+$footer-img-size: '';

@@ -1,0 +1,243 @@
+// ==========================================================================
+// Define Vars for @if
+// ==========================================================================
+
+//-defining all variables
+// for use within theme @if scopes
+
+$sidebar-color: null;
+$pagename-hover: null;
+$pagename-color: null;
+$body-bg-color: null;
+
+$res-header-bg: null;
+
+//-banners
+$header-img: null;
+$rangerstown-banner: null;
+$rangers-banner: null;
+$current-header-img: null;
+
+//-primary-colors
+$active-post-border: null;
+$sidebar-color: null;
+$link-bg: null;
+$link-visited: null;
+
+//-tabmenu
+$tabmenu-anchor-color: null;
+$tabmenu-anchor-hover: null;
+$tabmenu-anchor-text-shadow: null;
+$tabmenu-selected: null;
+$tab-menu-left-width: null;
+$tab-menu-left-bgsize: null;
+$tab-menu-left-hover-bp: null;
+
+//-sidebar
+$submit-txt-color:null;
+$submit-bg: null;
+$submit-bg-border-color: null;
+$submit-hover: null;
+$submit-hover-border: null;
+
+
+//-buttons
+$button-bg-color: null;
+$button-bg-hover-color: null;
+
+//-custom buttons
+$button1-txt-color: null;
+$button1-border-color: null;
+$button1-bg-color: null;
+
+$button2-txt-color: null;
+$button2-border-color: null;
+$button2-bg-color: null;
+
+$button3-txt-color: null;
+$button3-border-color: null;
+$button3-bg-color: null;
+
+$button4-txt-color: null;
+$button4-border-color: null;
+$button4-bg-color: null;
+
+//-body
+$body-bg-color: null;
+$body-text-color: null;
+
+//-main links
+$main-link-bg-color: null;
+$main-link-txt-color: null;
+$main-link-hover: null;
+$main-link-border-color: null;
+$main-link-box-shadow: null;
+$main-link-last-clicked-bg: null;
+$main-link-stickied-txt-color: null;
+$main-link-comments-anchor: null;
+
+$downvote-hover-bg: null;
+$downvote-hover-color: null;
+
+$like-score: null;
+$upvote-img: null;
+$downvote-img: null;
+
+//-anchors
+$anchor-color: null;
+$anchor-hover: null;
+
+//-footer
+$footer-link-titles: null;
+$footer-link-color: null;
+
+$footer-stripe1: null;
+$footer-stripe2: null;
+$footer-stripe3: null;
+
+$theme-name-color: null;
+
+//-buttons
+$btn-text-color: null;
+$btn-border-size: null;
+$btn-border-style: null;
+$btn-border-color: null;
+
+
+//-grid
+$grid-columns: null;
+$grid-max-width: null;
+
+$header-height: null;
+$header-bg-size: null;
+$header-bg-position: null;
+
+//-calc position from top based on header height
+$body-margin: null;
+$search-top: null;
+$tabmenu-top: null;
+$submit-top: null;
+$sidebar-margin: null;
+
+$single-linkinfo-top: null;
+$single-sidebar-top: null;
+
+
+//-buttons
+$btn-padding: null;
+$btn-border-radius: null;
+
+//-custom buttons
+$button1-width: null;
+$button1-padding: null;
+
+$button2-width: null;
+$button2-padding: null;
+
+$button3-width: null;
+$button3-padding: null;
+
+$button4-width: null;
+$button4-padding: null;
+
+//-footer
+$footer-parent-height:  null;
+$footer-parent-after-height: null;
+
+
+//-sidebar
+$submit-height: null;
+$sidebar-width: null;
+
+$search-expando-box-shadow: null;
+$sidebar-box-shadow: null;
+$sidebar-hover-box-shadow: null;
+
+
+//-logo
+$logo-max-width: null;
+
+//-main
+$main-row-padding: null;
+$main-col-padding: null;
+$wrapper-padding: null;
+
+//-socials
+$social-link-padding: null;
+$social-border-radius: null;
+$social-extras-padding: null;
+
+//-code
+$code-padding: null;
+$code-vertical-align: null;
+
+
+$body-bg-image:null;
+$body-bg-attachment:  null ;
+$body-bg-position: null;
+$body-bg-repeat: null;
+$body-bg-size: null;
+
+$win: null;
+$topbar-hover: null;
+$topbar-bg: null;
+
+//-sprite
+$naut-sprite: null;
+
+//-tabmenu
+$tab-menu-left-img: null;
+$tab-menu-left-bg-position: null;
+$tab-menu-left-padding: null;
+$tab-menu-left-height: null;
+
+//-links
+$sticky-img: null;
+$main-link-stickied-border-color: null;
+
+//-sidebar
+$user-word: null;
+$sidebar-img: null;
+$sidebar-img-height: null;
+$sidebar-img-bg-size: null;
+$sidebar-img-bg-repeat: null;
+
+$sidebar-bg-image: null;
+$sidebar-bg-attachment: null;
+$sidebar-bg-position: null;
+$sidebar-bg-repeat: null;
+$sidebar-bg-size: null;
+
+//-footer
+$footer-img: null;
+$footer-img-attachment: null;
+$footer-img-position: null;
+$footer-img-repeat: null;
+$footer-img-size: null;
+
+
+//-body
+$body-fsz: null;
+$body-fw: null;
+$body-font: null;
+
+//-sidebar
+$button1-fsz: null;
+$button2-fsz: null;
+$button3-fsz: null;
+$button4-fsz: null;
+
+$pagename-fsz: null;
+$pagename-lh: null;
+$pagename-shadow: null;
+
+$entry-link-fsz: null;
+
+
+//-main links
+$main-link-margin: null;
+
+$all-teams-flair: null;
+
+$slidemenu-text-color: null;
+$alien-blue: null;

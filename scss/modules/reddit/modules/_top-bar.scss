@@ -1,5 +1,9 @@
 //-top bar
 
+body>.content {
+  margin-top: 149px !important;
+}
+
 .side {
   h6 {
     position:fixed;
@@ -14,13 +18,13 @@
     text-decoration:none;
     color:$var-white;
     border-bottom: 2px solid $rangers-red;
-    @include transition-all(0.75s);
+    /* @include transition(0.75s all ease-in-out); */
     &:hover {
       background:$topbar-hover;
     }
     a {
       opacity:0.65;
-      @include transition-all(0.70s);
+      /* @include transition(0.70s all ease-in-out); */
       cursor:pointer;
       &:hover {
         opacity:1;
@@ -28,7 +32,7 @@
     }
     a[href="http://reddit.com/r/nyriveters"] {
       &:before {
-        background:url('%%nyriveters%%');
+      //  background:url('%%nyriveters%%');
         background-size:cover;
         width: 44px;
         height: 40px;
@@ -41,7 +45,7 @@
     }
     a[href="http://reddit.com/r/hartfordwolfpack"] {
       &:before {
-        background:url('%%wolf-pack%%');
+      //  background:url('%%wolf-pack%%');
         background-size:cover;
         width: 44px;
         height: 40px;
@@ -54,7 +58,7 @@
     }
     a[href="http://www.katiemoore.org"] {
       &:before {
-        background:url('%%km-foundation%%');
+      //  background:url('%%km-foundation%%');
         background-size:cover;
         width: 44px;
         height: 30px;
@@ -67,7 +71,7 @@
     }
     a[href="http://www.gardenofdreamsfoundation.org"] {
       &:before {
-        background:url('%%gd-foundation%%');
+      //  background:url('%%gd-foundation%%');
         background-size:cover;
         width: 90px;
         height: 30px;
@@ -80,7 +84,7 @@
     }
     a[href="http://reddit.com/r/hockey"] {
       &:before {
-        background:url('%%r-hockey-logo%%');
+      //  background:url('%%r-hockey-logo%%');
         background-size:cover;
         width: 60px;
         height: 50px;
@@ -94,7 +98,7 @@
     a[href="http://reddit.com/r/rangers"] {
       opacity:1;
       &:after {
-        background:url('%%sidebar-nhl-rangers%%');
+      //  background:url('%%sidebar-nhl-rangers%%');
         background-size:cover;
         width:40px;
         height:40px;

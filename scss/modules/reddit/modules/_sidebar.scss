@@ -89,7 +89,7 @@ div.titlebox span.number:after {
   color:$submit-txt-color;
   background-color:$submit-bg;
   text-transform: uppercase;
-  @include transition-all(0.3s);
+  /* @include transition-all(0.3s); */
   &:hover {
     height:$submit-height;
     background-color:$submit-hover;

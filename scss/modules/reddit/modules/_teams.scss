@@ -3,7 +3,7 @@ a[href="/r/anaheimducks"]:before, a[href="/r/bostonbruins"]:before, a[href="/r/s
     height: 20px;
     display: inline-block;
     background-repeat: no-repeat;
-    background-image: url(%%allteamflair%%);
+    /* background-image: url(%%allteamflair%%); */
     background-position: -9999px -9999px;
     vertical-align: middle;
     content: "";
@@ -12,7 +12,7 @@ a[href="/r/hockey"]:before {
     width: 20px;
     height: 20px;
     background-position:0 0;
-    background-image: url(%%nhl%%);
+    /* background-image: url(%%nhl%%); */
     }
 a[href="/r/anaheimducks"]:before {
     background-position: 0 -1701px !important

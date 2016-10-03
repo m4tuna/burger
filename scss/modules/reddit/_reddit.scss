@@ -1,5 +1,5 @@
 // ==========================================================================
-// R Rangers Style Base
+// Subreddit style setup
 // Author: Mike Fortuna
 // ==========================================================================
 
@@ -7,59 +7,25 @@
 @import "global/var";
 @import "global/define";
 @import "global/options";
+@import "global/images";
 @import "global/copy";
 
 //-naut 3.2
 @import "naut/naut";
 
-//-home theme
-@import "themes/home/colors";
-@import "themes/home/fonts";
-@import "themes/home/images";
-@import "themes/home/dimensions";
-@import "themes/home/settings";
-
-//-away theme
-@import "themes/away/colors";
-@import "themes/away/fonts";
-@import "themes/away/images";
-@import "themes/away/dimensions";
-@import "themes/away/settings";
-
-//-thid theme
-@import "themes/third/colors";
-@import "themes/third/fonts";
-@import "themes/third/images";
-@import "themes/third/dimensions";
-@import "themes/third/settings";
-
-//-mg-core
-@import "mg-core/base/helpers";
-@import "mg-core/base/mixins";
-@import "mg-core/base/transitions";
-@import "mg-core/base/reset";
-@import "mg-core/base/print";
-@import "mg-core/base/grid";
-
 //-reddit modules
-@import "reddit-modules/res";
-@import "reddit-modules/top-bar";
-@import "reddit-modules/slide-menu";
-@import "reddit-modules/header";
-@import "reddit-modules/tabmenu";
-@import "reddit-modules/flair";
-@import "reddit-modules/single";
-@import "reddit-modules/submit-page";
-@import "reddit-modules/sidebar";
-@import "reddit-modules/links";
-@import "reddit-modules/post";
-@import "reddit-modules/footer";
-@import "reddit-modules/mod";
-@import "reddit-modules/animations";
-@import "reddit-modules/buttons";
-
-//mg-responsive
-@import "mg-responsive/ie";
-@import "mg-responsive/tablet";
-@import "mg-responsive/mobile";
-@import "mg-responsive/desktop";
+@import "modules/res";
+@import "modules/top-bar";
+@import "modules/slide-menu";
+@import "modules/header";
+@import "modules/tabmenu";
+@import "modules/flair";
+@import "modules/single";
+@import "modules/submit-page";
+@import "modules/sidebar";
+@import "modules/links";
+@import "modules/post";
+@import "modules/footer";
+@import "modules/mod";
+@import "modules/animations";
+@import "modules/buttons";
