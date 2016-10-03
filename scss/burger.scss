@@ -5,14 +5,15 @@
 // Libs
 @import 'libs/flex-grid'; // Flex Grid
 @import 'libs/flex'; // Flexbox mixins
-@import 'libs/animate/animate'; // Animate.scss
+@import 'libs/animate/animate.scss'; // Animate.scss
 
 // Base
 @import 'base/mixins';
 @import 'base/global';
-@import 'base/functions';
+@import 'base/functions'; 
+@import 'base/classes';
 @import 'base/reset';
-@import 'base/float-grid'; // Float Grid
+@import 'base/float-grid'; // A fallback for those not ready for the ways of the flex
 
 // Vars
 @import 'vars/animations';
@@ -20,7 +21,6 @@
 @import 'vars/dimensions';
 @import 'vars/fonts';
 @import 'vars/images';
-@import 'vars/layout';
 @import 'vars/positioning';
 @import 'vars/settings';
 

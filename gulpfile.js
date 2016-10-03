@@ -1,44 +1,82 @@
 'use strict';
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+var minify = require('gulp-minify');
+var sassdoc = require('sassdoc');
 
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+var input = './scss/**.scss';
+var output = './css';
 
-  browserSync.init({
-    server: "./"
-  });
 
-  gulp.watch("./scss/*.scss", ['sass']);
-  gulp.watch("./*.html").on('change', browserSync.reload);
-});
+var sassOptions = {
+  errLogToConsole: true,
+  outputStyle: 'expanded'
+};
 
-/**
-* Compile with gulp-ruby-sass + source maps
-*/
+var sassdocOptions = {
+  dest: './sassdoc'
+};
+
+var autoprefixerOptions = {
+  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+};
+
 gulp.task('sass', function () {
-
-  return sass('./scss', {sourcemap: true})
-  .on('error', function (err) {
-    console.error('Error!', err.message);
-  })
-  .pipe(sourcemaps.write('./', {
-    includeContent: false,
-    sourceRoot: '/app/scss'
-  }))
-  .pipe(browserSync.stream({match: '**/*.css'}));
+  return gulp
+    .src(input)
+    .pipe(sourcemaps.init())
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(gulp.dest(output))
+    .resume();
 });
-//
-//
-// gulp.task('sass', function () {
-//   return gulp.src('./scss/**/*.scss')
-//     .pipe(sass.sync().on('error', sass.logError))
-//     .pipe(gulp.dest('./css'));
-// });
 
-gulp.task('watch', function () {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+gulp.task('prod', function () {
+  return gulp
+    .src(input)
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(gulp.dest(output))
+    .resume();
 });
+
+gulp.task('minify', function() {
+  gulp.src('lib/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('dist'))
+});
+
+
+
+gulp.task('sassdoc', function () {
+  return gulp
+    .src(input)
+    .pipe(sassdoc(sassdocOptions))
+    .resume();
+});
+
+
+
+gulp.task('watch', function() {
+  return gulp
+    // Watch the input folder for change,
+    // and run `sass` task when something happens
+    .watch(input, ['sass'])
+    // When there is a change,
+    // log a message in the console
+    .on('change', function(event) {
+      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    });
+});
+
+gulp.task('default', ['prod', 'minify']);

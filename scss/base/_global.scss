@@ -11,12 +11,13 @@ $breakpoints: (
   'lg':  ( min-width: 1200px ),
   'lg-only':  ( max-width: 1200px ),
   'xl':  ( min-width: 1400px ),
-  'lg-only':  ( max-width: 1400px ),
+  'xl-only':  ( max-width: 1400px ),
   'ie9-only': ( only screen and (min-width:0\0) ),
   'ie10-up': ( all and (-ms-high-contrast: none), (-ms-high-contrast: active) )
 ) !default;
 
 //-default font
+$sans: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 $default-font: $sans;
 $heading-font: $default-font;
 
