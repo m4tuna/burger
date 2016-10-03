@@ -1,4 +1,4 @@
-![Image of burger](https://github.com/m4tuna/burger/blob/master/images/burger.png)
+![Image of burger](https://github.com/m4tuna/burger/blob/master/images/burger-sm.png)
 
 # burger.scss
 
