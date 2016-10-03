@@ -2,11 +2,14 @@
 
 A starter framework built using Flexbox and SCSS.
 
-Quickly spin up an HTML Boilerplate. Using preset module sets, creating starter themes for:
-- Drupal 8 (In development)
+
+Used to create starter SCSS for:
+- HTML Boilerplate
 - Ionic
 - Reddit
-- Wordpress (In development)
+- Drupal 8 (In progress)
+- Wordpress (In progress)
+
 
 
 ![Image of burger](https://raw.githubusercontent.com/m4tuna/burger/master/images/burger-sm.png)
@@ -31,3 +34,8 @@ Disables source maps, minifies CSS and JS.
 ## Documentation
 
 In progress.
+
+
+Credits:
+- [Normalize](http://normalize.css)
+- [Animate](https://daneden.me/animate/)
