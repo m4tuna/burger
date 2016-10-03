@@ -1,0 +1,37 @@
+// ==========================================================================
+// Tabmenu
+// ==========================================================================
+
+#header .tabmenu li {
+  &.selected a {
+    color:$tabmenu-selected;
+  }
+  a {
+    text-shadow: $tabmenu-anchor-text-shadow;
+    color:$tabmenu-anchor-color;
+    &:hover {
+      color:$tabmenu-anchor-hover;
+    }
+  }
+}
+
+#header-bottom-left {
+  top: $tabmenu-top;
+}
+
+// tabmenu reddit winky
+#header-img.default-header, #header-img {
+  z-index: 99;
+  width: $tab-menu-left-width;
+  background-size: $tab-menu-left-bgsize;
+  padding-left: $tab-menu-left-padding;
+  height: $tab-menu-left-height;
+  background-image: url($tab-menu-left-img);
+  background-position:$tab-menu-left-bg-position ;
+  position: relative;
+  top: 0;
+  margin: 0;
+  &:hover {
+    background-position: $tab-menu-left-hover-bp;
+  }
+}

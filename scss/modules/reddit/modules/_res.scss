@@ -1,0 +1,24 @@
+// ==========================================================================
+// RES
+// ==========================================================================
+
+#sr-header-area {
+  background-color: $res-header-bg;
+}
+
+div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed {
+  border-color:$active-post-border;
+}
+
+.res #header-bottom-right .user .userkarma {
+    display: inline-block;
+}
+
+.res #header-bottom-right .user a {
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+.RESCloseButton {
+  z-index:5;
+}

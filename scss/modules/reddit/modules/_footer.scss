@@ -1,0 +1,49 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+html:not([lang="ns"]) .footer-parent {
+  background-image: url($footer-img);
+  background-repeat: $footer-img-repeat;
+  background-attachment: $footer-img-attachment;
+  height:$footer-parent-height ;
+  background-position: $footer-img-position;
+  background-size: $footer-img-size;
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  border-bottom:40px solid $footer-stripe2;
+  position:relative;
+  padding-bottom: 100px;
+  &:after {
+    content: $current-theme-copy;
+    font-size:11px;
+    font-weight:700;
+    color:$theme-name-color;
+    position: absolute;
+    z-index: -1;
+    height:$footer-parent-after-height;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 50px solid $footer-stripe1;
+    box-shadow:20px 160px 0px 20px $footer-stripe3;
+  }
+}
+
+// footer links
+
+.footer .flat-vert {
+  &.title {
+    color:$footer-link-titles;
+  }
+  li a {
+    color:$footer-link-color;
+  }
+}
+
+p.bottommenu {
+  color:$footer-link-color;
+}

@@ -1,0 +1,49 @@
+// sidebar custom buttons
+div.side div.spacer:nth-of-type(2):before {
+  content: $button1-copy;
+  width: $button1-width;
+  display: block;
+  color: $button1-txt-color;
+  padding: $button1-padding;
+  font-size: $button1-fsz;
+  text-align: center;
+  background-color: $button1-bg-color;
+  border: 1px solid $button1-border-color;
+}
+
+div.side div.spacer:nth-of-type(3):before {
+  content: $button2-copy;
+  width: $button2-width;
+  display: block;
+  color: $button2-txt-color;
+  padding: $button2-padding;
+  font-size: $button2-fsz;
+  text-align: center;
+  background-color: $button2-bg-color;
+  border: 1px solid $button2-border-color;
+}
+
+div.side div.spacer:nth-of-type(4):before {
+  content: $button3-copy;
+  width: $button3-width;
+  display: block;
+  color: $button3-txt-color;
+  padding: $button3-padding;
+  font-size: $button3-fsz;
+  text-align: center;
+  background-color: $button3-bg-color;
+  border: 1px solid $button3-border-color;
+}
+
+div.side div.spacer:nth-of-type(5):before {
+  content: $button4-copy;
+  width: $button4-width;
+  display: block;
+  color: $button4-txt-color;
+  padding: $button4-padding;
+  font-size: $button4-fsz;
+  text-align: center;
+  background-color: $button4-bg-color;
+  border: 1px solid $button4-border-color;
+  margin-bottom:30px;
+} 

@@ -1,0 +1,19 @@
+// ==========================================================================
+// Animations
+// ==========================================================================
+
+$slide-up-duration: .55s;
+$slide-up-iteration: 1;
+
+body>.content {
+  margin: $body-margin;
+  animation-duration: $slide-up-duration;
+  animation-iteration-count: $slide-up-iteration;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: $slide-up-duration;
+  -webkit-animation-iteration-count: $slide-up-iteration;
+}
+
+.titlebox .fancy-toggle-button .remove:after {
+    content: $unsubscribe-copy;
+}

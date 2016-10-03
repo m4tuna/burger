@@ -1,0 +1,112 @@
+// ==========================================================================
+// Sidebar
+// ==========================================================================
+
+// ad_sponsorship
+
+@if $hide-ads == true {
+  #ad_sponsorship, #ad-frame, #ad_main {
+    display: none;
+  }
+}
+
+
+// name of users
+div.titlebox span.number:after {
+    content: $user-word;
+}
+
+.link.stickied:before {
+  content: url($sticky-img);
+  float: left;
+  top: 18px;
+  position: relative;
+  left: 8px;
+}
+
+.top-bar {
+  position:fixed;
+  width:100%;
+  background:$rangers-blue;
+  height:50px;
+}
+
+.side {
+  background-color: $sidebar-color;
+  box-shadow: $sidebar-box-shadow;
+  margin:$sidebar-margin;
+  width:$sidebar-width;
+  //-sidebar img
+  &:before {
+    background-image:url($sidebar-img);
+    content:'';
+    height: $sidebar-img-height;
+    width: 100%;
+    background-repeat: $sidebar-img-bg-repeat;
+    display: block;
+    background-size: $sidebar-img-bg-size ;
+    margin-top: 10px;
+  }
+/*   &:hover {
+  box-shadow:$sidebar-hover-box-shadow;
+} */
+  .res #search #searchexpando {
+    width:$sidebar-width;
+    box-shadow: $search-expando-box-shadow;
+  }
+  textarea {
+    z-index: 5;
+  }
+}
+
+.res .titlebox .tagline {
+    margin-top: 5px;
+}
+
+// search
+
+#search {
+  top: $search-top;
+  z-index: 5;
+/*   &:before { Could be used to cover the menu text on small screens if the search bar is inline
+  content: "";
+  position: absolute;
+  left: -80px;
+  background: $body-bg-color;
+  height: 35px;
+  width: 80px;
+} */
+}
+
+#search input[type="text"]:-ms-input-placeholder::after{
+  content:$search-placeholder-copy;
+}
+
+
+// submit button
+.morelink  {
+  top: $submit-top;
+  color:$submit-txt-color;
+  background-color:$submit-bg;
+  text-transform: uppercase;
+  @include transition-all(0.3s);
+  &:hover {
+    height:$submit-height;
+    background-color:$submit-hover;
+    border-top: 5px solid $submit-hover-border;
+    border-bottom: 5px solid $submit-hover-border;
+    margin-top:-5px;
+  }
+  a {
+    letter-spacing:3px;
+    color:$submit-txt-color;
+  }
+}
+
+.disabled .morelink:after{
+  content:$disabled-copy;
+}
+
+.md pre, .md .-cells, .md th, .md td {
+  padding: 4px;
+}

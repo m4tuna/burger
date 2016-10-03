@@ -1,0 +1,101 @@
+// ==========================================================================
+// Main Links
+// ==========================================================================
+
+.arrow.arrow.upmod {
+  margin-top: 0px;
+  background-image: url($upvote-img) !important;
+  opacity: 0.8;
+  width: 32px;
+  height: 29px;
+  background-position: 2px 0px;
+  background-size: 100%;
+}
+.arrow.downmod {
+  margin-top: 2px;
+  background-image: url($downvote-img) !important;
+  opacity: 0.8;
+  width: 35px;
+  height: 34px;
+  background-position: 0px 1px;
+}
+.midcol {
+  @include transition-all(0.7s);
+}
+
+.arrow.down:after {
+  background-color: $downvote-hover-bg;
+}
+
+.link {
+  background-color: $main-link-bg-color;
+  border: 1px solid transparent;
+  margin: $main-link-margin;
+  box-shadow: 2px 4px 3px transparent;
+
+
+  &:hover {
+    background-color: $main-link-hover;
+    border: 1px solid $main-link-border-color;
+  }
+  .score.likes {
+    color: $like-score;
+  }
+  .entry {
+    .buttons {
+      li {
+        a {
+          font-size:$entry-link-fsz;
+        }
+        .redditSingleClick {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+
+@if $hide-ads == true {
+  .link.promotedlink.promoted, .promotedlink {
+    display:none !important;
+  }
+}
+
+
+.link.last-clicked {
+  background-color: $main-link-last-clicked-bg;
+}
+
+.thing.collapsed {
+  padding:12px 14px !important;
+}
+
+.thing.stickied {
+  /* border:2px solid $main-link-stickied-border-color; */
+  a.title, .thing.stickied a, .entry li .comments {
+    color:$main-link-stickied-txt-color;
+  }
+}
+
+.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title {
+  color: #2B4877;
+}
+
+.entry .buttons li a {
+  color: $anchor-color;
+  &.comments {
+    color: $main-link-comments-anchor;
+  }
+}
+
+.commentarea .menuarea {
+  margin: 0 0 10px 2px;
+}
+
+.content .thing .title:visited, .content .thing.visited .title {
+  color: $link-visited;
+}
+
+.md a:visited {
+    color: $link-visited;;
+}

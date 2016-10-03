@@ -1,0 +1,22 @@
+// Float Grid
+
+$grid-columns: 12;
+$grid-column-gutter: 0 2%;
+
+$col-widths: ();
+
+@for $i from 1 through $grid-columns {
+    @for $j from 1 through $i {
+        $w: ($j/$i);
+
+        @if not index($col-widths, $w) {
+            .col-#{$j}-#{$i} {
+                width: $w * 100%;
+                padding:$grid-column-gutter;
+            }
+
+            $col-widths: append($col-widths, $w, comma);
+        }
+
+    }
+}

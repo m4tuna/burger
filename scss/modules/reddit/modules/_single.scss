@@ -1,0 +1,43 @@
+// ==========================================================================
+// Single Page
+// ==========================================================================
+
+.comments-page {
+  &.res.comments-page .side, .side {
+    margin-top:$single-sidebar-top;
+    .linkinfo {
+      top: $single-linkinfo-top;
+    }
+  }
+  .link:hover {
+    background:$var-white;
+  }
+}
+
+.expando {
+  table {
+    width:100%;
+    margin-top: 30px;
+    th {
+      background-color: $rangers-blue;
+      color:$var-white;
+    }
+  }
+  h1 {
+    text-transform: uppercase;
+    margin-top:25px;
+  }
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+  }
+}
+
+#noresults {
+  top: 10px;
+}
+
+
+.combined-search-page .search-result-group {
+  background-color:$var-white;
+  padding-top: 30px;
+}

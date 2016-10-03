@@ -1,0 +1,51 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+body {
+  background-color: $body-bg-color;
+  &:before {
+    background-image: url($current-header-img);
+    height: $header-height;
+    background-size: $header-bg-size;
+    background-position: $header-bg-position;
+    z-index: 8;
+  }
+/*   &:after {
+  background-image: url($current-header-img);
+  height: $header-height;
+  background-size: $header-bg-size;
+  background-position: $header-bg-position;
+  z-index: 8;
+} */
+}
+
+body>.content {
+  margin: $body-margin;
+  z-index: 5;
+}
+
+#header .pagename a {
+  color:$pagename-color;
+  font-size: $pagename-fsz;
+  text-shadow: $pagename-shadow;
+  &:before {
+    content:$pagename-prefix-copy;
+    font-size: $pagename-fsz;
+    letter-spacing: $pagename-lh;
+  }
+  &:hover {
+    color:$pagename-hover;
+  }
+}
+
+#mail {
+  top:2px;
+  &.havemail:before {
+    content:$have-mail-copy;
+  }
+}
+
+#header {
+  z-index: 99;
+}

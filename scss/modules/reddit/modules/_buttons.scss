@@ -1,0 +1,49 @@
+// Buttons
+
+.sheets .btn {
+  height: 40px;
+}
+
+.btn, button.btn {
+  padding:$btn-padding;
+}
+.btn, button.btn, button {
+  background-color: $button-bg-color;
+  color:$var-black;
+  text-decoration: none;
+  border-radius:0px;
+  border:2px solid transparent;
+  text-align: center;
+  cursor:pointer;
+  &:hover {
+    background-color: $button-bg-hover-color;
+  }
+  &.complete {
+    cursor:default;
+    background:$dark-grey;
+    border-color:$dark-grey;
+    &:hover {
+      background:$dark-grey;
+      border-color:$dark-grey;
+    }
+  }
+  &.mobile {
+    display:none;
+  }
+  &.block {
+    display: block;
+    clear:both;
+    width:100%;
+  }
+  &.var-white {
+    color: $var-black;
+    &:hover {
+      color: $var-black;
+    }
+  }
+  &.submit {
+    @extend .block;
+    width:50%;
+    margin:15px auto 0;
+  }
+}
