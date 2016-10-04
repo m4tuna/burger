@@ -7,16 +7,16 @@
   padding: 2em 0 6em;
   p {
     text-align: center;
-    color: $color__text;
+    color: invert($color__text);
   }
   h2 {
-    color: $color__text;
+    color: invert($color__text);
     text-align: center;
   }
   ul {
     text-align: center;
     margin: 1em auto 0;
-    color: $color__text;
+    color: invert($color__text);
     li {
       margin: 0 1em;
     }
