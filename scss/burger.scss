@@ -10,7 +10,7 @@
 @import 'libs/flex'; // Flexbox mixins
 @import 'libs/animate/animate'; // Animate.scss
 @import 'libs/fa/font-awesome'; // Fontawesome.scss
-
+ 
 // Base
 @import 'base/classes';
 @import 'base/mixins';
@@ -35,6 +35,10 @@
 @import 'layout/triple'; // Page w/ 2 sidebars
 @import 'layout/header';
 @import 'layout/footer';
+
+// Elems
+@import 'elements/body';
+
 
 // Components
 @import 'components/alerts';

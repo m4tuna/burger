@@ -6,6 +6,12 @@ body.docs {
   header, footer {
     margin:1em auto;
     text-align: center;
+    a {
+      color:$secondary;
+      &:hover {
+        color:$tertiary;
+      }
+    }
   }
   p span {
     background:$white;
@@ -13,12 +19,15 @@ body.docs {
     padding:0 0.15em;
   }
   h2 {
-    @include fp(font-size, 30, 70);
+    @include fp(font-size, 30, 50);
   }
   h2, h3, h4 {
     margin: 1em 0;
   }
   header {
+    p {
+      color:$black;
+    }
     @include flex-center(flex, column);
     height:100vh;
     text-align: center;
@@ -32,7 +41,7 @@ body.docs {
   }
 
   .item {
-    background-color: CornflowerBlue;
+    background-color: $tertiary;
     border-radius: 2px;
     display: block;
     height: 2em;

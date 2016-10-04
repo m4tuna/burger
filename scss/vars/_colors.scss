@@ -23,7 +23,8 @@ $palettes: (
     light: (
       border: #eee,
       txt: #fff,
-      link: #111,
+      link: #fff,
+      link-hover: #000,
       headers: #fff,
       body-bg: #f9f9fa,
       header-bg: #000,
@@ -36,6 +37,7 @@ $palettes: (
       border: #2f2f2f,
       txt: #ccc,
       link: #eee,
+      link-hover: #000,
       headers: #fff,
       body-bg: #19191a,
       header-bg: #000,
@@ -85,6 +87,9 @@ $color__text: clr($current_theme, txt);
 /// link Color
 /// @type Color
 $color__link: clr($current_theme, link);
+/// link Color
+/// @type Color
+$color__link-hover: clr($current_theme, link-hover);
 /// Header (h1, h2, etc) Text Color
 /// @type Color
 $color__headers: clr($current_theme, headers);

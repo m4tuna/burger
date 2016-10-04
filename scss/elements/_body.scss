@@ -3,27 +3,19 @@
 // ==========================================================================
 
 body {
-  font-family:$body-fsz;
-  font-weight: $body-fw;
-  font-size: $body-fsz;
-  line-height: $body-fsz+2;
-  color: $body-text-color;
-  background: $body-bg-color;
+  color: $color__text;
+  background: $color__body-bg;
   background-image: url($body-bg-image);
   background-repeat:$body-bg-repeat;
   background-attachment: $body-bg-attachment;
   background-position: $body-bg-position;
-  @include bg-size($body-bg-size);
-  &.music-demo {
-    background-image:url('../images/bg-music.jpg');
-  }
   @if $font-smoothing == true {
     @extend %font-smoothing;
   }
   a {
-    color:$link-color;
+    color:$color__link;
     &:hover {
-      color:$link-hover;
+      color: $color__link-hover;
     }
   }
   p {
