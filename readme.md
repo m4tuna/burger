@@ -1,3 +1,6 @@
+![Image of burger](https://raw.githubusercontent.com/m4tuna/burger/master/images/burger-xs.png)
+
+
 # burger.scss
 
 A starter framework built using Flexbox and SCSS.
@@ -9,10 +12,6 @@ Used to create starter SCSS for:
 - Reddit
 - Drupal 8 (In progress)
 - Wordpress (In progress)
-
-
-
-![Image of burger](https://raw.githubusercontent.com/m4tuna/burger/master/images/burger-xs.png)
 
 
 ## Compile
