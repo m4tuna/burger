@@ -3,7 +3,7 @@
 // ==========================================================================
 
 html:not([lang="ns"]) .footer-parent {
-  background-image: url($footer-img);
+  /* background-image: url($footer-img); */
   background-repeat: $footer-img-repeat;
   background-attachment: $footer-img-attachment;
   height:$footer-parent-height ;

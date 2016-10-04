@@ -5,6 +5,7 @@
 body {
   background-color: $body-bg-color;
   &:before {
+    content:'';
     background-image: url($current-header-img);
     height: $header-height;
     background-size: $header-bg-size;

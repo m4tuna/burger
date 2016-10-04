@@ -1,7 +1,8 @@
 // ==========================================================================
 // Images
 // Note: Vars used here need to be defined in global/_define.scss
-// ==========================================================================
+// ====================================
+// ======================================
 //-body
 $body-bg-image:'' ;
 $body-bg-attachment: none ;
@@ -11,7 +12,9 @@ $body-bg-size: cover;
 
 //-banners
 $current-header-img:'%%zonk%%';
-$headerimg: $current-header-img;
+
+$upvote-img: '%%up%%';
+$downvote-img: '%%down%%';
 
 $header-bg-size: cover;
 $header-bg-position: center center;
@@ -30,6 +33,7 @@ $tab-menu-left-hover-bp: -208px -96px;
 
 //-sidebar
 $sidebar-img: '%%sidebar%%';
+$footer-img: '%%footer-img%%';
 
 $sidebar-img-height: 230px;
 $sidebar-img-bg-size: contain;

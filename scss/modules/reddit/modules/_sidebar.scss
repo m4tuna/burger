@@ -2,6 +2,9 @@
 // Sidebar
 // ==========================================================================
 
+
+$sidebar-margin: 260px 16px 0 0;
+$submit-top: 215px;
 // ad_sponsorship
 
 @if $hide-ads == true {
@@ -16,14 +19,14 @@ div.titlebox span.number:after {
     content: $user-word;
 }
 
-.link.stickied:before {
+/* .link.stickied:before {
   content: url($sticky-img);
   float: left;
   top: 18px;
   position: relative;
   left: 8px;
 }
-
+ */
 .top-bar {
   position:fixed;
   width:100%;
@@ -38,7 +41,7 @@ div.titlebox span.number:after {
   width:$sidebar-width;
   //-sidebar img
   &:before {
-    background-image:url($sidebar-img);
+    background-image:url(#{$sidebar-img});
     content:'';
     height: $sidebar-img-height;
     width: 100%;
@@ -46,6 +49,9 @@ div.titlebox span.number:after {
     display: block;
     background-size: $sidebar-img-bg-size ;
     margin-top: 10px;
+  }
+  h5:before {
+    background-image: none;
   }
 /*   &:hover {
   box-shadow:$sidebar-hover-box-shadow;

@@ -1,6 +1,6 @@
 {
   "name": "burger",
-  "version": "0.9.0",
+  "version": "0.8.0",
   "author": "Mike Fortuna",
   "description": "simple scss framework built for rapid prototyping",
   "main": "gulpfile.js",

@@ -145,6 +145,7 @@ a.random.choice {
   width: 0;
   padding-left: 48px;
   height: 48px;
+  background-image: url(%%spritesheet%%);
   background-position: -208px -48px;
   position: relative;
   top: 0;
@@ -269,6 +270,7 @@ body:not(.loggedin) #header-bottom-right {
 #mail, #modmail {
   width: 16px;
   height: 14px;
+  background-image: url(%%spritesheet%%) !important;
   background-repeat: no-repeat !important;
   background-color: transparent;
   transition: all .25s ease; }
@@ -309,6 +311,7 @@ body:not(.loggedin) #header-bottom-right {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background-color .25s ease,box-shadow .25s ease;
+  background-image: url(%%spritesheet%%);
   background-position: 269px -32px;
   background-repeat: no-repeat; }
 
@@ -332,6 +335,7 @@ body:not(.loggedin) #header-bottom-right {
 
 #header-bottom-right a.pref-lang, .loggedin .logout a {
   background-position: -0 -16px;
+  background-image: url(%%spritesheet%%);
   width: 16px;
   height: 14px;
   display: inline-block;
@@ -424,6 +428,7 @@ body:not(.loggedin) #header-bottom-right {
   height: 32px;
   width: 32px;
   margin-left: -38px;
+  background-image: url(%%spritesheet%%);
   background-position: -215px -231px;
   background-repeat: no-repeat;
   border: none !important;
@@ -432,6 +437,7 @@ body:not(.loggedin) #header-bottom-right {
   transition: background-color .15s ease; }
 
 #search input[type=submit]:hover {
+  background-image: url(%%spritesheet%%);
   background-position: -215px -231px;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.05); }
@@ -466,6 +472,7 @@ body:not(.loggedin) #header-bottom-right {
   top: 148px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
   background-color: #516ae8;
+  background-image: url(%%spritesheet%%) !important;
   background-position: 268px -214px !important;
   background-repeat: no-repeat !important;
   right: 16px;
@@ -632,6 +639,7 @@ div.titlebox span.number:after {
   background-color: #51A3E8;
   border: 0 solid;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  background-image: url(%%spritesheet%%);
   transition: all .25s ease,background-position .25s ease,background-color .5s ease;
   outline: none !important; }
 
@@ -813,6 +821,7 @@ body:before {
   left: 0;
   right: 0;
   background-color: #3A3D4D;
+  background-image: url(%%zonk%%);
   background-repeat: no-repeat;
   background-position: 50% 0;
   content: "";
@@ -852,6 +861,7 @@ body > .content .link .rank, .rank-spacer {
 
 .arrow {
   margin: 0 0 0 2px;
+  background-image: url(%%spritesheet%%) !important;
   background-color: transparent;
   width: 33px;
   border-radius: 2px;
@@ -1030,6 +1040,7 @@ body .content .sitetable .link .title a:hover {
   height: 16px !important;
   border-radius: 2px;
   background-color: transparent;
+  background-image: url(%%spritesheet%%) !important;
   border: 1px solid #e9e9e9;
   cursor: pointer; }
 
@@ -1151,6 +1162,7 @@ body .content .sitetable .link .title a:hover {
 
 .RESUserTagImage {
   height: 10px !important;
+  background-image: url(%%spritesheet%%) !important;
   background-position: -192px -34px !important;
   opacity: 0.25 !important;
   margin-left: 2px !important;
@@ -2385,6 +2397,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   top: 1px !important; }
 
 .pinHeader-sub #sr-header-area, .pinHeader-subanduser #sr-header-area {
+  background-image: url(%%zonk%%);
   background-position: 50% 0; }
 
 .pinHeader-sub #header-bottom-left, .pinHeader-subanduser #header-bottom-left {
@@ -2404,6 +2417,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 .pinHeader-header #header {
   top: 0;
+  background-image: url(%%zonk%%);
   height: 84px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24); }
 
@@ -2849,7 +2863,7 @@ body > .content {
   z-index: 5; }
 
 body > .content {
-  margin-top: 149px !important; }
+  margin-top: 260px !important; }
 
 .side h6 {
   position: fixed;
@@ -2928,46 +2942,18 @@ body > .content {
       position: absolute;
       opacity: 1; }
 
-.side h5 {
-  position: fixed;
-  top: 90px;
-  right: -160px;
-  width: auto;
-  z-index: 8;
-  height: 45px;
-  margin: 0 !important;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.68);
-  text-decoration: none;
-  border: none;
-  padding: 10px 10px 10px 42px;
-  /* @include transition-all(0.75s); */ }
-  .side h5:before {
-    content: ' ';
-    background-position: -670px -600px !important;
-    right: 165px;
-    top: 10px;
-    display: block;
-    height: 22px;
-    width: 25px;
-    position: absolute; }
-  .side h5:hover {
-    right: 0; }
-  .side h5 a {
-    opacity: 0.65;
-    /* @include transition-all(0.70s); */
-    cursor: pointer; }
-    .side h5 a:hover {
-      opacity: 1; }
-
+/* @import "modules/slide-menu"; */
 body {
   /*   &:after {
+    background-image: url($current-header-img);
     height: $header-height;
     background-size: $header-bg-size;
     background-position: $header-bg-position;
     z-index: 8;
   } */ }
   body:before {
-    height: 145px;
+    content: '';
+    background-image: url("%%zonk%%");
     background-size: cover;
     background-position: center center;
     z-index: 8; }
@@ -2992,6 +2978,7 @@ body > .content {
   background-size: initial;
   padding-left: 48px;
   height: 48px;
+  background-image: url("%%spritesheet%%");
   background-position: -208px -48px;
   position: relative;
   top: 0;
@@ -3195,216 +3182,252 @@ body > .content {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -20px -1155px; }
   .flair.flair-NHLNewYorkRangersLady:before {
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -20px -1177px; }
   .flair.flair-NHLNewYorkRangersOld1:before {
     width: 18px;
     height: 17px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -20px -1199px; }
   .flair.flair-NHLNewYorkRangersOld2:before {
     width: 18px;
     height: 17px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -20px -1221px; }
   .flair.flair-NHLNewYorkRangersOld3:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -20px -1241px; }
   .flair.flair-Toast:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -84px -735px; }
   .flair.flair-NHLLeagueLogo:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%nhl%%); */
     vertical-align: middle;
     background-position: 0px 0px; }
   .flair.flair-NHLAnaheimDucks:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: 0px -1701px; }
   .flair.flair-NHLBostonBruins:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: 0px -1785px; }
   .flair.flair-NHLBuffaloSabres:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: 0px -1932px; }
   .flair.flair-NHLCalgaryFlames:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: 0px -1995px; }
   .flair.flair-NHLCarolinaHurricanes:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -42px; }
   .flair.flair-NHLChicagoBlackhawks:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -84px; }
   .flair.flair-NHLColoradoAvalanche:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -168px; }
   .flair.flair-NHLColumbusBlueJackets:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -210px; }
   .flair.flair-NHLDallasStars:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -83px -712px; }
   .flair.flair-NHLDetroitRedWings:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -357px; }
   .flair.flair-NHLEdmontonOilers:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -441px; }
   .flair.flair-NHLFloridaPanthers:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -546px; }
   .flair.flair-NHLLosAngelesKings:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -567px; }
   .flair.flair-NHLMinnesotaWild:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -735px; }
   .flair.flair-NHLMontrealCanadiens:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -798px; }
   .flair.flair-NHLNashvillePredators:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -987px; }
   .flair.flair-NHLNewJerseyDevils:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1050px; }
   .flair.flair-NHLNewYorkIslanders:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1092px; }
   .flair.flair-NHLOttawaSenators:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1491px; }
   .flair.flair-NHLPhiladelphiaFlyers:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1575px; }
   .flair.flair-NHLPhoenixCoyotes:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1596px; }
   .flair.flair-NHLPittsburghPenguins:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1721px; }
   .flair.flair-NHLSanJoseSharks:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1827px; }
   .flair.flair-NHLStLouisBlues:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -21px -1911px; }
   .flair.flair-NHLTampaBayLightning:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -42px 0px; }
   .flair.flair-NHLTorontoMapleLeafs:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -42px -105px; }
   .flair.flair-NHLVancouverCanucks:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -42px -210px; }
   .flair.flair-NHLWashingtonCapitals:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -42px -336px; }
   .flair.flair-NHLWinnipegJets:before {
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
+    /* background-image: url(%%allteamflair%%); */
     vertical-align: middle;
     background-position: -42px -420px; }
 
@@ -3422,6 +3445,7 @@ a[href="http://www.msgnetworks.com"] {
   content: " "; }
 
 a[href="/r/anaheimducks"]:before, a[href="/r/bostonbruins"]:before, a[href="/r/sabres"]:before, a[href="/r/calgaryflames"]:before, a[href="/r/canes"]:before, a[href="/r/hawks"]:before, a[href="/r/coloradoavalanche"]:before, a[href="/r/bluejackets"]:before, a[href="/r/dallasstars"]:before, a[href="/r/detroitredwings"]:before, a[href="/r/edmontonoilers"]:before, a[href="/r/floridapanthers"]:before, a[href="/r/losangeleskings"]:before, a[href="/r/wildhockey"]:before, a[href="/r/habs"]:before, a[href="/r/predators"]:before, a[href="/r/devils"]:before, a[href="/r/newyorkislanders"]:before, a[href="/r/rangers"]:before, a[href="/r/ottawasenators"]:before, a[href="/r/flyers"]:before, a[href="/r/coyotes"]:before, a[href="/r/penguins"]:before, a[href="/r/sanjosesharks"]:before, a[href="/r/stlouisblues"]:before, a[href="/r/tampabaylightning"]:before, a[href="/r/leafs"]:before, a[href="/r/atlantathrashers"]:before, a[href="/r/canucks"]:before, a[href="/r/caps"]:before, a[href="/r/winnipegjets"]:before, a[href="/r/austria"]:before, a[href="/r/teamcanada"]:before, a[href="/r/czech"]:before, a[href="/r/denmark"]:before, a[href="/r/finland"]:before, a[href="/r/unitedkingdom"]:before, a[href="/r/japan"]:before, a[href="/r/norway"]:before, a[href="/r/latvia"]:before, a[href="/r/russia"]:before, a[href="/r/slovakia"]:before, a[href="/r/slovenia"]:before, a[href="/r/sweden"]:before, a[href="/r/switzerland"]:before, a[href="/r/usahockey"]:before, a[href="/r/france"]:before, a[href="/r/italy"]:before, a[href="/r/kazakhstan"]:before, a[href="/r/belgium"]:before, a[href="/r/belarus"]:before, a[href="/r/germany"]:before {
+  /* background-image: url($all-teams-flair); */
   width: 25px;
   height: 25px;
   display: inline-block;
@@ -3603,7 +3627,7 @@ a[href="/r/austria"]:before {
   padding-top: 30px; }
 
 .submit-page .content {
-  margin-top: 160px;
+  margin-top: 215px;
   margin-bottom: 10px; }
   .submit-page .content #newlink.submit.content .btn {
     font-size: 20px;
@@ -3615,12 +3639,14 @@ a[href="/r/austria"]:before {
 div.titlebox span.number:after {
   content: " blueshirts,"; }
 
-.link.stickied:before {
+/* .link.stickied:before {
+  content: url($sticky-img);
   float: left;
   top: 18px;
   position: relative;
-  left: 8px; }
-
+  left: 8px;
+}
+ */
 .top-bar {
   position: fixed;
   width: 100%;
@@ -3628,10 +3654,12 @@ div.titlebox span.number:after {
   height: 50px; }
 
 .side {
+  margin: 260px 16px 0 0;
   /*   &:hover {
     box-shadow:$sidebar-hover-box-shadow;
   } */ }
   .side:before {
+    background-image: url(%%sidebar%%);
     content: '';
     height: 230px;
     width: 100%;
@@ -3639,6 +3667,8 @@ div.titlebox span.number:after {
     display: block;
     background-size: contain;
     margin-top: 10px; }
+  .side h5:before {
+    background-image: none; }
   .side textarea {
     z-index: 5; }
 
@@ -3660,6 +3690,7 @@ div.titlebox span.number:after {
   content: "Search reddit.."; }
 
 .morelink {
+  top: 215px;
   text-transform: uppercase;
   /* @include transition-all(0.3s); */ }
   .morelink:hover {
@@ -3677,6 +3708,7 @@ div.titlebox span.number:after {
 
 .arrow.arrow.upmod {
   margin-top: 0px;
+  background-image: url("%%up%%") !important;
   opacity: 0.8;
   width: 32px;
   height: 29px;
@@ -3685,6 +3717,7 @@ div.titlebox span.number:after {
 
 .arrow.downmod {
   margin-top: 2px;
+  background-image: url("%%down%%") !important;
   opacity: 0.8;
   width: 35px;
   height: 34px;
@@ -3723,6 +3756,7 @@ div.titlebox span.number:after {
   /* background-color: #FFEAEA; */ }
 
 html:not([lang="ns"]) .footer-parent {
+  /* background-image: url($footer-img); */
   background-repeat: no-repeat;
   background-attachment: none;
   background-position: bottom 100px center;

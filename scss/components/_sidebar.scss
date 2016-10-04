@@ -29,6 +29,9 @@
     background-attachment: $footer-bg-attachment;
     background-position: $footer-bg-position;
     background-size:$footer-bg-size;
+    h5 {
+      background-image:none;
+    }
     [class*='column-'] {
       padding:$sidebar-col-padding;
     }
