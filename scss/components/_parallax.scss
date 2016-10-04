@@ -1,0 +1,27 @@
+// ==========================================================================
+// Parallax
+// ==========================================================================
+
+
+@include parallax-init;
+
+// Add to hero and main as examples
+
+#hero {
+  z-index: 5;
+  .item {
+    @include parallax(-.1);
+  }
+  .row.center.absolute {
+    @include parallax(.2);
+  }
+  margin: auto;
+  > * {
+    /* position: absolute; */
+  }
+}
+
+main {
+  @include parallax(-.25);
+  z-index:7;
+}

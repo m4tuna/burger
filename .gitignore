@@ -3,3 +3,4 @@ node_modules/*
 sassdoc/*
 Procfile
 images/*.psd
+todo.txt

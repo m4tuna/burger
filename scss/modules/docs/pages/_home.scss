@@ -1,21 +1,7 @@
-// content
-
-p, ul {
-  font-family:$default-font;
-}
-
-p {
-  margin: 1em 0;
-}
-
-.content {
-  margin:$content-margin;
-  padding:$content-padding;
-}
-
-@mixin boiler() {
-  body.docs {
+@mixin docs() {
+  body {
     background:$color__body-bg;
+    @include setLayout('triple');
     /* For demo only */
     header, footer {
       margin:1em auto;

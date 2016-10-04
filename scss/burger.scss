@@ -2,6 +2,8 @@
 // Author: Mike Fortuna
 // Date: 10/3/2016
 
+// Global
+@import 'vars/global';
 
 // Libs
 @import 'libs/flex-grid'; // Flex Grid
@@ -13,28 +15,22 @@
 @import 'base/mixins';
 @import 'base/functions';
 @import 'base/reset';
-@import 'base/float-grid'; // A fallback for those not ready for the ways of the flex
+@import 'base/float-grid'; // A fallback for quick float grid prototyping
 
 // Vars
-@import 'base/global';
 @import 'vars/animations';
 @import 'vars/colors';
-@import 'vars/dimensions';
 @import 'vars/fonts';
 @import 'vars/images';
 @import 'vars/positioning';
 @import 'vars/settings';
 
 
-// Layout
-@import 'layout/single'; // Splash or one page layout
-@import 'layout/double'; // Page w/ sidebar
-@import 'layout/triple'; // Page w/ 2 sidebars
+// Layouts
 @import 'layout/header';
+@import 'layout/nav';
+@import 'layout/sidebar';
 @import 'layout/footer';
-
-// Elems
-@import 'elements/body';
 
 
 // Components
@@ -42,14 +38,15 @@
 @import 'components/buttons';
 @import 'components/breadcrumbs';
 @import 'components/buttons';
-@import 'components/carousels';
+@import 'components/carousels'; // Set carousel type here
 @import 'components/cards';
 @import 'components/dropdowns';
 @import 'components/flags';
 @import 'components/forms';
 @import 'components/headings';
+@import 'components/hero';
 @import 'components/labels';
-@import 'components/lists';
+@import 'components/logo';
 @import 'components/modals';
 @import 'components/print';
 @import 'components/progress';
@@ -60,7 +57,8 @@
 // MODULES
 //
 // docs only
-@import 'modules/docs';
+@import 'modules/docs/docs';
+@import 'modules/boiler/boiler';
 
 // Boiler
 @import 'modules/boiler/boiler';

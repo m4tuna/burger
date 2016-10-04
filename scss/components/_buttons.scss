@@ -2,6 +2,10 @@
 // Buttons
 // ==========================================================================
 
+//-buttons
+$btn-padding: 15px 20px;
+$btn-border-radius: 0px;
+
 // Buttons
 
 @mixin button($padding, $text-color, $font, $border-radius, $hover-time) {

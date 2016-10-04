@@ -2,6 +2,14 @@
 // Social Links
 // ==========================================================================
 
+//-socials
+$social-link-padding: 5px 10px;
+$social-border-radius: 2px;
+$social-extras-padding: 5px 9px;
+$social-margin: 20px 10px 0;
+
+
+
 #social {
   @extend %list-reset;
   @extend %list-inline;

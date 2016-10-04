@@ -1,1 +1,39 @@
-// modals
+// ==========================================================================
+// Modals
+// ==========================================================================
+
+//-mg-modal
+$modal-height: 500px;
+$modal-width: 500px;
+
+
+body.mg-backdrop {
+  overflow: hidden;
+  .mg-cloak {
+    background: transparentize($black, .35);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 888;
+    overflow-x: auto;
+  }
+}
+
+.mg-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 4%;
+  z-index: 999;
+  @include size(400px);
+  .close-btn {
+    color: $white;
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: 900;
+    font-family: $sans;
+  }
+}

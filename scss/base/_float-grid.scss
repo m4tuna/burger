@@ -1,8 +1,5 @@
 // Float Grid
 
-$grid-columns: 12;
-$grid-column-gutter: 0 2%;
-
 $col-widths: ();
 
 @for $i from 1 through $grid-columns {

@@ -17,6 +17,11 @@ $breakpoints: (
   'ie10-up': ( all and (-ms-high-contrast: none), (-ms-high-contrast: active) )
 ) !default;
 
+$grid-columns: 12;
+$grid-column-gutter: 0 2%;
+$content-margin: 4em 0 5em;
+$content-padding: 2em 0 6em;
+
 //-default font
 $sans: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 $rail: 'Raleway', sans-serif;

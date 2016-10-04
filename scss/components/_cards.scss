@@ -2,7 +2,7 @@
 
 
 .card {
-  margin:4em 0 5em;
+  margin:$content-margin;
   background: $color__node-bg;
   padding: 2em 0 6em;
   p {

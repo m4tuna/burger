@@ -1,6 +1,70 @@
 // burger
 // _mixins.scss
 
+// setLayout
+@mixin setLayout($type) {
+	@if $type == null {
+		.content {
+			width:100%;
+		}
+	}
+	@if $type == 'single' {
+		.content {
+			width:100%;
+		}
+	}
+	@if $type == 'double' {
+		.content {
+			width:75%;
+			float:left;
+		}
+		.sidebar {
+			width:25%;
+			&.sidebar-left {
+				float:left;
+			}
+			&.sidebar-right {
+				float:right;
+			}
+		}
+	}
+	@if $type == 'triple' {
+		.content {
+			width:50%;
+			float:left;
+		}
+		.sidebar {
+			width:25%;
+			&.sidebar-left {
+				float:left;
+			}
+			&.sidebar-right {
+				float:right;
+			}
+		}
+	}
+	@if $responsive-sidebar {
+	  @include breakpoint(md-only) {
+	    .content, .sidebar, .sidebar-right, .sidebar-left {
+	      width:100%;
+	      float:left;
+	    }
+	  }
+	}
+
+}
+
+
+// Fadein
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@mixin fadeIn($delay){
+	animation: fadein $delay;
+}
+
 // Flex Center
 // Flex-center option
 // $set-flex: flex, inline-flex
@@ -109,10 +173,6 @@
 /// @example scss - Filter Mixin
 ///   @include filter(blur(50px));
 @mixin filter( $var ) {
-  -webkit-filter: $var;
-  -moz-filter: $var;
-  -ms-filter: $var;
-  -o-filter: $var;
   filter:$var;
 }
 

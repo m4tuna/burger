@@ -2,6 +2,13 @@
 // Logo
 // ==========================================================================
 
+//-logo
+$logo-width: 110px;
+$logo-height: 62px;
+$logo-max-width: 520px;
+$logo-margin: 0;
+$logo-hover-time: 0.3s;
+
 a.logo {
   display: $logo-display;
   height:$logo-height;
@@ -13,12 +20,8 @@ a.logo {
   background-attachment: $logo-bg-attachment;
   background-position: $logo-bg-position;
   background-size:$logo-bg-size;
-  color:$logo-color;
-  &.music {
-    background-image:url('../images/logo-music.png');
-    width:70px;
-  }
-  @include transition-all($logo-hover-time);
+  color:$color__text;
+  @include transition($logo-hover-time all ease-in-out);
   @if $logo-hover-fade == true {
     &:hover {
       opacity:$logo-hover-opacity;

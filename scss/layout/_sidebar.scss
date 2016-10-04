@@ -1,0 +1,40 @@
+// ==========================================================================
+// Sidebar
+// ==========================================================================
+
+$responsive-sidebar: true;
+
+//-sidebar
+$sidebar-width: 100px;
+$sidebar-col-padding: 0;
+$sidebar-padding: 10px 5px;
+
+.sidebar {
+  display:inline-block;
+  height:auto;
+  background: $color__sidebar-bg;
+  margin:$content-margin;
+  padding:$content-padding;
+  text-align: center;
+  .sidebar-left {
+    float:left;
+  }
+  .sidebar-right {
+    float:right;
+  }
+  h5 {
+    background-image:none;
+  }
+  [class*='column-'] {
+    padding:$grid-column-gutter;
+  }
+  a {
+    color:$color__link;
+    &:hover {
+      color:$color__link-hover;
+    }
+  }
+  @if $fixed-sidebar == true {
+    @include position(fixed, $top: 0, $left: 0);
+  }
+}
