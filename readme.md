@@ -12,7 +12,7 @@ Used to create starter SCSS for:
 
 
 
-![Image of burger](https://raw.githubusercontent.com/m4tuna/burger/master/images/burger-sm.png)
+![Image of burger](https://raw.githubusercontent.com/m4tuna/burger/master/images/burger-xs.png)
 
 
 ## Compile
@@ -21,6 +21,8 @@ After cloning repository, `cd` into the directory and install the packages
 ``npm install``
 
 ### To run in dev
+``browser-sync start --server --files "css/*.css"``
+
 ``gulp watch``
 
 Enables source maps, launches browsersync.

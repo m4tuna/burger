@@ -1,12 +1,16 @@
 <html>
 <head>
   <title>burger.scss</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <!-- <link rel="icon" type="image/gif" href="/images/favicon.gif">
+  <link rel="icon" type="image/jpeg" href="/images/favicon.jpg">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.ico">`</pre> -->
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body class="docs">
   <header>
-    <img src="images/burger-sm.png" alt="">
+    <img src="images/burger-xs.png" alt="">
     <nav>
       <ul class="list-inline list-reset">
         <li><a target="_blank" href="https://github.com/m4tuna/burger">github</a></li>
@@ -17,7 +21,7 @@
 
   <div class="card">
     <h2>about burger.scss</h2>
-    <p>A starter framework built using Flexbox and SCSS.</p>
+    <p>Burger is a lightweight starter framework built using Flexbox and SCSS.</p>
     <p>Used to create starter SCSS for:</p>
     <ul class="list-reset list-inline">
       <li><i class="fa fa-html5"></i> HTML Boilerplate</li>
@@ -31,7 +35,12 @@
 
   <div class="contain">
     <div class="column-xs-12">
-      <h2></h2>
+      <h2>Setup</h2>
+      <p>Clone from git. Run <span>npm install</span> to install local packages.</p>
+      <h2>Build</h2>
+      <p>Run <span>gulp watch</span> to compile for local use. Enables source maps and browsersync autoreload.</p>
+      <p>Run <span>gulp</span> to compile for production. Enables minification.</p>
+      <p>Run <span>browser-sync start --server --files "css/*.css"</span> run local browsersync.</p>
     </div>
     <div class="column-xs-12">
 
@@ -132,7 +141,7 @@
 
       <div class="row">
         <div class="column-xs-12">
-          <h2>Column Offsets Demo</h2>
+          <h2>Column Offsets</h2>
         </div>
 
         <div class="column-xs-12">
@@ -191,7 +200,7 @@
       <div class="row">
 
         <div class="column-xs-12">
-          <h2>Responsitivity By Combining Namespaces Demo</h2>
+          <h2>Responsitivity By Combining Namespaces</h2>
           <p>Drag browser around to test responsive breakpoints.</p>
         </div>
 
@@ -309,7 +318,7 @@
   </div>
 
   <footer>
-    <p>Copyright Burger.scss?</p>
-  </footer>
+    <p>&copy; 2016 Mike Fortuna</p>
+    <p><a href="https://opensource.org/licenses/MIT">MIT License</a></p>
 </body>
 </html>
