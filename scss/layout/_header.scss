@@ -1,1 +1,12 @@
 // header layout
+
+.header {
+  width: 100%;
+  padding: 1em;
+  position:fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background:transparentize($white, 0.55);
+  font-family:$rail;
+}

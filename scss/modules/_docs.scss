@@ -75,6 +75,17 @@ body.docs {
       }
     }
   }
+  .header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-content:center;
+    align-items:center;
+    img {
+      width:75px;
+      margin-right:1em;
+    }
+  }
   footer {
     p {
       color:$black;
