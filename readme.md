@@ -6,9 +6,9 @@
 A starter framework built using Flexbox and SCSS.
 
 
-Used to create starter SCSS for:
-- HTML Boilerplate
-- Ionic
+Used to create starter SCSS themes for:
+- HTML Boilerplates
+- Ionic Apps
 - Reddit
 - Drupal 8 (In progress)
 - Wordpress (In progress)
