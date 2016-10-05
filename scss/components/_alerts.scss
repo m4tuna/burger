@@ -1,1 +1,21 @@
 // alerts
+
+.alert {
+  width:100%;
+  height:auto;
+  padding:2em;
+  text-align: left;
+  h2, p {
+    clear:both;
+    float:left;
+  }
+  &.error {
+    background: $red;
+  }
+  &.warning {
+    background: $yellow;
+  }
+  &.positive {
+    background: $green;
+  }
+}
