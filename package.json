@@ -25,6 +25,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
+    "modernizr-mixin": "^3.0.7",
     "sassdoc": "^2.1.20"
   }
 }

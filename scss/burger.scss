@@ -6,6 +6,7 @@
 @import 'vars/global';
 
 // Libs
+@import 'modernizr';
 @import 'libs/flex-grid'; // Flex Grid
 @import 'libs/animate/animate'; // Animate.scss
 @import 'libs/fa/font-awesome'; // Fontawesome.scss
@@ -31,7 +32,6 @@
 @import 'layout/nav';
 @import 'layout/sidebar';
 @import 'layout/footer';
-
 
 // Components
 @import 'components/alerts';
