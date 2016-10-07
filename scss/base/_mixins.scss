@@ -4,22 +4,27 @@
 // setLayout
 @mixin setLayout($type) {
 	@if $type == null {
+		.container {
+			display:flex;
+			flex-direction:row;
+		}
 		.content {
 			width:100%;
+			margin-left:0;
 		}
 	}
 	@if $type == 'single' {
 		.content {
 			width:100%;
+			margin-left:0;
 		}
 	}
 	@if $type == 'double' {
-		.content {
-			width:75%;
-			float:left;
+		.container {
+			display:flex;
+			flex-direction:row;
 		}
 		.sidebar {
-			width:25%;
 			&.sidebar-left {
 				float:left;
 			}

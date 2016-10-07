@@ -5,6 +5,11 @@
   height:auto;
   padding:2em;
   text-align: left;
+  float: left;
+  position:relative;
+  .close {
+    @include position(absolute, $top:20px, $right: 20px);
+  }
   h2, p {
     clear:both;
     float:left;
@@ -17,5 +22,8 @@
   }
   &.positive {
     background: $green;
+    h2, p {
+      color:$white;
+    }
   }
 }
