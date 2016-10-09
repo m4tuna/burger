@@ -40,3 +40,4 @@ In progress.
 Credits:
 - [Normalize](http://normalize.css)
 - [Animate](https://daneden.me/animate/)
+- [Modernizr](https://github.com/danielguillan/modernizr-mixin)
