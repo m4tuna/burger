@@ -2,19 +2,42 @@
 // Buttons
 // ==========================================================================
 
-//-buttons
-$btn-padding: 15px 20px;
-$btn-border-radius: 0px;
 
 // Buttons
 
-@mixin button($padding, $text-color, $font, $border-radius, $hover-time) {
-  padding:$padding;
+@mixin button($padding, $text-color, $bg-color, $border-color, $font, $border-radius, $hover-time) {
   color:$text-color;
+  background: $bg-color;
+  border:1px solid $border-color;
+  padding:$padding;
   font-family:$font;
   text-decoration: none;
   border-radius: $border-radius;
   text-align: center;
   cursor:pointer;
-  @include transition-all($hover-time);
+  @include transition($hover-time all ease-in-out);
+}
+
+// Some Preset Button classes
+$btn-colors:  (
+  red: $red,
+  green: $green,
+  black: $black,
+  blue: $blue,
+  white: $white,
+  yellow: $yellow,
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  purple: $purple,
+  pink: $pink,
+  orange: $orange,
+  grey: $grey,
+  brown: $brown
+);
+
+@each $name, $btn-color in $btn-colors {
+  .button-#{$name} {
+    @include button(5px 10px, #{$btn-color} , transparent, #{$btn-color} , $sans, 2px, 0.35s);
+  }
 }
