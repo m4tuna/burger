@@ -5,8 +5,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var sassdoc = require('sassdoc');
-
-var input = './scss/**.scss';
+var input = './scss/*.scss';
+var watchinput = './scss/**/*.scss';
 var output = './css';
 
 
@@ -71,7 +71,7 @@ gulp.task('watch', function() {
   return gulp
     // Watch the input folder for change,
     // and run `sass` task when something happens
-    .watch(input, ['sass'])
+    .watch(watchinput, ['sass'])
     // When there is a change,
     // log a message in the console
     .on('change', function(event) {

@@ -1,3 +1,7 @@
+// Flex grid
+
+@import '../libs/flex-grid';
+
 // Float Grid
 
 $col-widths: ();
@@ -11,7 +15,6 @@ $col-widths: ();
                 width: $w * 100%;
                 padding:$grid-column-gutter;
             }
-
             $col-widths: append($col-widths, $w, comma);
         }
 

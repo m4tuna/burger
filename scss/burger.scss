@@ -6,59 +6,22 @@
 @import 'vars/global';
 
 // Libs
-@import 'modernizr';
-@import 'libs/flex-grid'; // Flex Grid
+@import 'libs/modernizr';
 @import 'libs/animate/animate'; // Animate.scss
 @import 'libs/fa/font-awesome'; // Fontawesome.scss
 
 // Base
-@import 'base/classes';
-@import 'base/mixins';
-@import 'base/functions';
-@import 'base/reset';
-@import 'base/float-grid'; // A fallback for quick float grid prototyping
+@import 'base/base';
 
 // Vars
-@import 'vars/animations';
-@import 'vars/colors';
-@import 'vars/fonts';
-@import 'vars/images';
-@import 'vars/positioning';
-@import 'vars/settings';
+@import 'vars/vars';
 
 
 // Layouts
-@import 'layout/header';
-@import 'layout/nav';
-@import 'layout/sidebar';
-@import 'layout/footer';
+@import 'layout/layout';
 
 // Components
-@import 'components/alerts';
-@import 'components/buttons';
-@import 'components/breadcrumbs';
-@import 'components/buttons';
-@import 'components/carousels'; // Set carousel type here
-@import 'components/cards';
-@import 'components/dropdowns';
-@import 'components/flags';
-@import 'components/forms';
-@import 'components/headings';
-@import 'components/hero';
-@import 'components/labels';
-@import 'components/logo';
-@import 'components/modals';
-@import 'components/print';
-@import 'components/progress';
-@import 'components/spinner';
-@import 'components/tables';
-@import 'components/tooltips';
+@import 'components/components';
 
 // MODULES
-//
-// docs only
-@import 'modules/docs/docs';
-@import 'modules/boiler/boiler';
-
-// Boiler
 @import 'modules/boiler/boiler';
