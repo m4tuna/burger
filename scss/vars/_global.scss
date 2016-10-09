@@ -17,12 +17,57 @@ $breakpoints: (
   'ie10-up': ( all and (-ms-high-contrast: none), (-ms-high-contrast: active) )
 ) !default;
 
+// Grid
+
+$grid-type: 'flex'; // flex or float
 $grid-columns: 12;
 $grid-column-gutter: 0 2%;
 $content-margin: 4em 0 5em;
 $content-padding: 2em 0 6em;
 
-//-default font
+// Asset paths
+
+/// Options include dev, stage, prod
+/// Customize paths below, change this before starting QA and before moving to production
+/// @name setMode
+//
+$setMode: 'dev';
+
+/// @name Asset Path Map
+// Configure your asset urls here
+// use the var $asset_path when calling bg images
+$asset_paths: (
+  dev: (
+    base_url: 'http://localhost:3000/',
+    asset_path: 'http://localhost:3000/images/'
+  ),
+  stage: (
+    base_url: 'http://www.staging.com/',
+    asset_path: 'http://www.staging.com/images/'
+  ),
+  prod: (
+    base_url: 'http://www.production.com/',
+    asset_path: 'http://www.production.com/images/'
+  )
+);
+
+// Set path function
+@function setPaths($path__name, $path__url:null) {
+  /// path__url is optional
+  @if ($path__url != null) {
+    /// map inception
+    @return map-get(map-get($asset_paths, $path__name), $path__url);
+    } @else {
+      @return map-get($asset_paths, $path__name);
+  }
+}
+
+// Set site path vars
+$asset_path: setPaths($setMode, asset_path);
+$base_url: setPaths($setMode, base_url);
+
+
+//-default fonts
 $sans: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 $rail: 'Raleway', sans-serif;
 $default-font: $rail;
