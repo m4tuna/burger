@@ -14,7 +14,7 @@ Used to create starter SCSS themes for:
 - Wordpress (In progress)
 
 
-## Compile
+###\ Setup
 After cloning repository, `cd` into the directory and install the packages
 
 ``npm install``
@@ -34,12 +34,15 @@ Runs browser-sync locally, enables source maps, launches browsersync.
 Disables source maps, compiles and minifies CSS and JS. No server.
 
 
-## Documentation
+### Documentation
 
 SASS docs in progress.
 
+### Stats
+[![Throughput Graph](https://graphs.waffle.io/m4tuna/burger/throughput.svg)](https://waffle.io/m4tuna/burger/metrics/throughput)
 
-Credits:
+
+### Credits:
 - [Normalize](http://normalize.css)
 - [Animate](https://daneden.me/animate/)
 - [Modernizr](https://github.com/danielguillan/modernizr-mixin)

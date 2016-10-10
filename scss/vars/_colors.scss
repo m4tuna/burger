@@ -20,7 +20,7 @@ $walmart-blue: #007cc2;
 
 
 $palettes: (
-    light: (
+    funk: (
       border: #eee,
       txt: #000,
       link: #000,
@@ -33,7 +33,7 @@ $palettes: (
       node-bg: #5d9e47,
       footer-bg: #000
     ),
-    dark: (
+    classic: (
       border: #2f2f2f,
       txt: #ccc,
       link: #eee,
@@ -69,14 +69,9 @@ $palettes: (
 /// Social Color Palette Map
 $socials: map-get($palettes, 'socials');
 
-/// Theme Color Palette Map To Use - options: light | dark
+/// Theme Color Palette Map To Use - options: funk | classic
 /// @type Color
-$current_theme: 'light';
-$dark-theme: false;
-
-@if $dark-theme {
-  $current_theme: 'dark';
-}
+$current_theme: 'funk';
 
 /// Border Color
 /// @type Color
