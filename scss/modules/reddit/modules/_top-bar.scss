@@ -16,8 +16,8 @@ body>.content {
     margin: 0 !important;
     box-shadow:1px 1px 1px rgba(0, 0, 0, 0.68);
     text-decoration:none;
-    color:$var-white;
-    border-bottom: 2px solid $rangers-red;
+    color:$white;
+    border-bottom: 2px solid $red;
     /* @include transition(0.75s all ease-in-out); */
     &:hover {
       background:$topbar-hover;

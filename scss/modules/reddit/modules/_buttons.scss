@@ -9,7 +9,7 @@
 }
 .btn, button.btn, button {
   background-color: $button-bg-color;
-  color:$var-black;
+  color:$black;
   text-decoration: none;
   border-radius:0px;
   border:2px solid transparent;
@@ -20,11 +20,11 @@
   }
   &.complete {
     cursor:default;
-    background:$dark-grey;
-    border-color:$dark-grey;
+    background:$grey;
+    border-color:$grey;
     &:hover {
-      background:$dark-grey;
-      border-color:$dark-grey;
+      background:$grey;
+      border-color:$grey;
     }
   }
   &.mobile {
@@ -35,10 +35,10 @@
     clear:both;
     width:100%;
   }
-  &.var-white {
-    color: $var-black;
+  &.white {
+    color: $black;
     &:hover {
-      color: $var-black;
+      color: $black;
     }
   }
   &.submit {

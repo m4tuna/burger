@@ -10,7 +10,7 @@
     }
   }
   .link:hover {
-    background:$var-white;
+    background:$white;
   }
 }
 
@@ -19,8 +19,8 @@
     width:100%;
     margin-top: 30px;
     th {
-      background-color: $rangers-blue;
-      color:$var-white;
+      background-color: $blue;
+      color:$white;
     }
   }
   h1 {
@@ -38,6 +38,6 @@
 
 
 .combined-search-page .search-result-group {
-  background-color:$var-white;
+  background-color:$white;
   padding-top: 30px;
 }
