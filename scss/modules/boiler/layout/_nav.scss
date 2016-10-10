@@ -9,3 +9,34 @@ $iframe-top-fix: 7px;
 //-mobile nav
 $mobile-nav-height: 75px;
 $mobile-nav-padding:0 0 15px;
+
+.menu-button {
+  display: inline-block;
+  padding: .5em;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+}
+
+
+@include breakpoint(large) {
+
+  .burger-icon {
+    @include burger(25px, 3px, 5px, #444);
+  }
+
+  .menu-button.is-active .burger-icon {
+    @include burger-to-cross;
+  }
+}
+
+@if $mobile-nav-on-tablet {
+  @include breakpoint(medium down) {
+    .burger-icon {
+      @include burger(25px, 3px, 5px, #444);
+    }
+
+    .menu-button.is-active .burger-icon {
+      @include burger-to-cross;
+    }
+  }
+}

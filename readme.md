@@ -10,8 +10,7 @@ Used to create starter SCSS themes for:
 - HTML Boilerplates
 - Ionic Apps
 - Reddit
-- Drupal 8 (In progress)
-- Wordpress (In progress)
+- Drupal 8 or Wordpress theming
 
 
 ###\ Setup
