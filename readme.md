@@ -19,9 +19,6 @@ After cloning repository, `cd` into the directory and install the packages
 
 ``npm install``
 
-### Server
-
-``npm start``
 
 ### Run local
 
