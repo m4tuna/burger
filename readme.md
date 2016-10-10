@@ -19,22 +19,27 @@ After cloning repository, `cd` into the directory and install the packages
 
 ``npm install``
 
-### To run in dev
-``browser-sync start --server --files "css/*.css"``
+### Server
 
-``gulp watch``
+``npm start``
 
-Enables source maps, launches browsersync.
+### Run local
+
+``npm start``
+
+
+Runs browser-sync locally, enables source maps, launches browsersync.
 
 ### To compile for prod
+
 ``gulp``
 
-Disables source maps, minifies CSS and JS.
+Disables source maps, compiles and minifies CSS and JS. No server.
 
 
 ## Documentation
 
-In progress.
+SASS docs in progress.
 
 
 Credits:

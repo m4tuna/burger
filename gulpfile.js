@@ -8,6 +8,15 @@ var sassdoc = require('sassdoc');
 var input = './scss/*.scss';
 var watchinput = './scss/**/*.scss';
 var output = './css';
+var child = require('child_process');
+var fs = require('fs');
+
+gulp.task('server', function() {
+  var server = child.spawn('node', ['server.js']);
+  var log = fs.createWriteStream('server.log', {flags: 'a'});
+  server.stdout.pipe(log);
+  server.stderr.pipe(log);
+});
 
 
 var sassOptions = {
@@ -71,7 +80,7 @@ gulp.task('watch', function() {
   return gulp
     // Watch the input folder for change,
     // and run `sass` task when something happens
-    .watch(watchinput, ['sass'])
+    .watch(watchinput, ['server'], ['sass'])
     // When there is a change,
     // log a message in the console
     .on('change', function(event) {
