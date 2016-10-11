@@ -6,7 +6,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "preinstall": "./configure",
-    "start": "{ gulp watch & browser-sync start --port 3000 --server --files 'css/*.css' & }"
+    "start": "{ browser-sync start --port 3000 --server --files 'css/*.css' & gulp watch & }"
   },
   "dependencies": {
     "mime": "~1.2.7"

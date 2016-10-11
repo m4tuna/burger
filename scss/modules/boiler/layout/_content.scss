@@ -13,8 +13,8 @@ p {
   padding:$content-padding;
 }
 
-@mixin boiler() {
-  body.docs {
+@mixin burgerDocs() {
+  body.burger-docs {
     background:$color__body-bg;
     /* For demo only */
     header, footer {

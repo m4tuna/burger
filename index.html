@@ -15,10 +15,9 @@
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="icon" type="image/gif" href="/images/favicon.gif">
   <link rel="icon" type="image/jpeg" href="/images/favicon.jpg">
-  <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.ico">`</pre>
-  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="/css/burger.css">
 </head>
-<body class="docs">
+<body class="burger-docs">
   <div class="header">
     <div class="left">
       burger.scss
@@ -237,6 +236,18 @@
 
 
       <div class="row">
+        <div class="column-xs-12">
+          <h2>burger menu</h2>
+          <a href="#" class="menu-button" id="menuButton">
+            <span class="burger-icon"></span>
+          </a>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row">
 
         <div class="column-xs-12">
           <h2>Responsitivity By Combining Namespaces</h2>
@@ -362,6 +373,7 @@
         <li><a href="http://fontawesome.io" target="_blank">fontawesome</a></li>
       </ul>
     </div>
+
   </div>
 
   <div class="card">
@@ -375,5 +387,13 @@
   <footer>
     <p>&copy; 2016 Mike Fortuna</p>
     <p><a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+  </footer>
+  <script>
+  var menuButton = document.getElementById('menuButton');
+  menuButton.addEventListener('click', function (e) {
+    menuButton.classList.toggle('is-active');
+    e.preventDefault();
+  });
+  </script>
 </body>
 </html>

@@ -11,12 +11,12 @@ var output = './css';
 var child = require('child_process');
 var fs = require('fs');
 
-gulp.task('server', function() {
-  var server = child.spawn('node', ['server.js']);
-  var log = fs.createWriteStream('server.log', {flags: 'a'});
-  server.stdout.pipe(log);
-  server.stderr.pipe(log);
-});
+// gulp.task('server', function() {
+//   var server = child.spawn('node', ['server.js']);
+//   var log = fs.createWriteStream('server.log', {flags: 'a'});
+//   server.stdout.pipe(log);
+//   server.stderr.pipe(log);
+// });
 
 
 var sassOptions = {
@@ -36,11 +36,10 @@ gulp.task('sass', function () {
   return gulp
     .src(input)
     .pipe(sourcemaps.init())
-    .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(sourcemaps.write())
+    .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(gulp.dest(output))
-    .resume();
 });
 
 gulp.task('prod', function () {
@@ -80,7 +79,7 @@ gulp.task('watch', function() {
   return gulp
     // Watch the input folder for change,
     // and run `sass` task when something happens
-    .watch(watchinput, ['server'], ['sass'])
+    .watch(watchinput, ['sass'])
     // When there is a change,
     // log a message in the console
     .on('change', function(event) {

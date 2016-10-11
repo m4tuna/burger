@@ -15,6 +15,17 @@ $mobile-nav-padding:0 0 15px;
   padding: .5em;
   background-color: #fafafa;
   border: 1px solid #ccc;
+  width: 45px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.menu-button.is-active .burger-icon {
+  @include burger-to-cross;
+}
+
+.burger-icon {
+  @include burger(25px, 3px, 5px, #444);
 }
 
 
@@ -39,4 +50,8 @@ $mobile-nav-padding:0 0 15px;
       @include burger-to-cross;
     }
   }
+}
+
+.circle {
+  border-radius:60px;
 }

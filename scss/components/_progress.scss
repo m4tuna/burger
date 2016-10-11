@@ -1,1 +1,16 @@
 // progress
+
+
+@mixin progressPercentage($progress){
+	div.progressBar div {
+		width: $progress;
+		background: rgb(100% - $progress, $progress, 50%);
+	}
+
+	div.progressBar div:after {
+		content: "#{round($progress)}"
+	}
+
+}
+
+// see https://codepen.io/techsev/pen/nlszq
