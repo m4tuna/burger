@@ -5,7 +5,6 @@
   "description": "simple scss framework built for rapid prototyping",
   "main": "gulpfile.js",
   "scripts": {
-    "preinstall": "./configure",
     "start": "{ browser-sync start --port 3000 --server --files 'css/*.css' & gulp watch & }"
   },
   "dependencies": {
