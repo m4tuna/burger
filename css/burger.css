@@ -5391,7 +5391,7 @@
 /* @import '../node_modules/brand-colors/dist/latest/scss/brand-colors.latest.scss'; */
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 
