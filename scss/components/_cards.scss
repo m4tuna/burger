@@ -1,10 +1,176 @@
 // cards
 
+$card-colors:  (
+  red: $red,
+  green: $green,
+  black: $black,
+  blue: $blue,
+  white: $white,
+  yellow: $yellow,
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  purple: $purple,
+  pink: $pink,
+  orange: $orange,
+  grey: $grey,
+  brown: $brown,
+  lime: $lime
+);
+
+$color-coated-buttons: false;
+$card-right-width: 240px;
 
 .card {
-  margin:$content-margin;
-  background: $color__node-bg;
-  padding: 2em 0 6em;
+  /* margin:$content-margin; */
+  background: $color__card-bg;
+  padding: 0.5em 2.5em 1em;
+  margin: 1em auto;
+  width:100%;
+  border-radius:3px;
+  @include flex-center(flex, row);
+  justify-content: space-between;
+  position:relative;
+  box-shadow:-1px 1px 5px transparentize($black, .89);
+  &.large {
+    align-items: stretch;
+    padding:0;
+
+    .title {
+      margin-left:3em;
+    }
+    p, h3 {
+      text-align: left;
+      padding:0.5em 0 0;
+      margin:0;
+    }
+    ul {
+      text-align: left;
+      color:$blue;
+      font-family:$sans;
+      font-weight:300;
+      text-transform: uppercase;
+      li {
+        margin:3em 0;
+      }
+      i {
+        float:right;
+        &:first-child {
+          float:none;
+          border-right:1px solid $grey;
+          padding-right:1em;
+          margin-right:1em;
+          margin-left: 0;
+        }
+      }
+
+    }
+    hr {
+      opacity:0.3;
+    }
+    .card-icon {
+      left:20px;
+      font-size:25px;
+      top:20px;
+    }
+    .left {
+      padding:1em;
+      padding-left:30px;
+      a {
+        display:block;
+      }
+    }
+    .right {
+      text-align: center;
+      padding:2em 0;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      align-content:center;
+      flex-direction:column;
+      .button {
+        width:80%;
+      }
+    }
+    img {
+      width:100%;
+    }
+    .button-transparent {
+      border:1px solid $white;
+      width:80%;
+      font-size:13px;
+      padding:10px 18px;
+      i {
+        float:right;
+        position:relative;
+        top:2px;
+      }
+      &:hover {
+        background:$white;
+      }
+    }
+  }
+  .card-icon {
+    position:absolute;
+    left:-30px;
+    top:25px;
+    color:$white;
+    border-radius:30px;
+    font-size:20px;
+    width:50px;
+    height:50px;
+    @include flex-center(flex, column);
+  }
+  @each $name, $card-color in $card-colors {
+    &.#{$name} {
+      &.large {
+        border-top:2px solid #{$card-color};
+        .right {
+          background-color:#{$card-color};
+        }
+        h3 {
+          color:darken($grey, 50%);
+          font-size:18px;
+          font-weight:900;
+          text-transform: uppercase;
+        }
+      }
+      &.woman {
+        border:none;
+      }
+      h3 {
+        color:#{$card-color};
+      }
+      .card-icon {
+        background:#{$card-color};
+        border-color:#{$card-color};
+      }
+      @if $color-coated-buttons {
+        .card-icon, .button {
+          background:#{$card-color};
+          border-color:#{$card-color};
+        }
+        .button:hover {
+          background:transparent;
+        }
+      }
+    }
+  }
+  .left {
+    width:400px;
+    h3 {
+      margin-bottom:0.3em;
+    }
+    a {
+      margin:0 0.5em;
+      font-family:$rail;
+      font-size:14px;
+      display: inline-block;
+    }
+  }
+  .right {
+    width:$card-right-width;
+  }
   p {
     text-align: center;
     color: invert($color__text);
@@ -19,6 +185,28 @@
     color: invert($color__text);
     li {
       margin: 0 1em;
+    }
+  }
+  &.full-width {
+    margin:$content-margin;
+    background:$color__node-bg;
+    padding: 2em 0 6em;
+    @include flex-center(flex, column);
+    p {
+      text-align: center;
+      color: invert($color__text);
+    }
+    h2 {
+      color: invert($color__text);
+      text-align: center;
+    }
+    ul {
+      text-align: center;
+      margin: 1em auto 0;
+      color: invert($color__text);
+      li {
+        margin: 0 1em;
+      }
     }
   }
 }

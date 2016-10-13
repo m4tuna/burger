@@ -2,8 +2,12 @@
 
 @import '../libs/flex-grid';
 
-// Float Grid
+$row-margin: 1em -0.5rem;
 
+// Float Grid
+.row {
+  margin: $row-margin;
+}
 $col-widths: ();
 
 @for $i from 1 through $grid-columns {

@@ -12,10 +12,10 @@ $mobile-nav-padding:0 0 15px;
 
 .menu-button {
   display: inline-block;
-  padding: .5em;
-  background-color: #fafafa;
+  padding: 0.8em ;
+  background-color: $white;
   border: 1px solid #ccc;
-  width: 45px;
+  width: 52px;
   border-radius: 2px;
   text-align: center;
 }
@@ -29,7 +29,7 @@ $mobile-nav-padding:0 0 15px;
 }
 
 
-@include breakpoint(large) {
+@include breakpoint(lg) {
 
   .burger-icon {
     @include burger(25px, 3px, 5px, #444);
@@ -41,7 +41,7 @@ $mobile-nav-padding:0 0 15px;
 }
 
 @if $mobile-nav-on-tablet {
-  @include breakpoint(medium down) {
+  @include breakpoint(md) {
     .burger-icon {
       @include burger(25px, 3px, 5px, #444);
     }

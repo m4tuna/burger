@@ -37,7 +37,7 @@
     <p>SASS documentation is still in progress.</p>
   </header>
 
-  <div class="card">
+  <div class="card full-width">
     <h2>about burger.scss</h2>
     <p>Burger is a lightweight starter framework built using Flexbox and SCSS.</p>
     <p>Used to create starter SCSS for:</p>
@@ -56,315 +56,438 @@
     <div class="column-xs-12">
       <h2>Setup</h2>
       <p>Clone from git. Run <span>npm install</span> to install local packages.</p>
-      <h2>Build</h2>
       <p>Run <span>gulp watch</span> to compile for local use. Enables source maps and browsersync autoreload.</p>
       <p>Run <span>gulp</span> to compile for production. Enables minification.</p>
       <p>Run <span>browser-sync start --server --files "css/*.css"</span> run local browsersync.</p>
     </div>
-    <div class="column-xs-12">
-      <h2>SCSS</h2>
-      <p>All sassdocs are available <a href="/sassdocs/index.html">here</a>.</p>
-    </div>
-    <div class="column-xs-12">
-      <h3>Components</h3>
-    </div>
-    <div class="column-xs-12">
-      <h3>Layouts</h3>
-    </div>
-    <div class="column-xs-12">
-      <h3>Mixins</h3>
-    </div>
-    <div class="column-xs-12">
-      <h3>Modules</h3>
-    </div>
-    <div class="column-xs-12">
-      <h3>Vars</h3>
-    </div>
-    <div class="column-xs-12">
 
-      <div class="row">
+    <hr>
 
-        <div class="column-xs-12">
-          <h2>Grid</h2>
-        </div>
 
-        <div class="column-xs-12">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-11">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-2">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-10">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-3">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-9">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-4">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-8">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-5">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-7">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-6">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-7">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-5">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-8">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-4">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-9">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-3">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-10">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-2">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-11">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-1">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-12">
-          <div class="item"></div>
-        </div>
-
+    <div class="row">
+      <div class="column-xs-12">
+        <h2>burger menu</h2>
+        <a href="#" class="menu-button" id="menuButton">
+          <span class="burger-icon"></span>
+        </a>
       </div>
+    </div>
 
-      <hr>
+    <hr>
 
-      <div class="row">
-        <div class="column-xs-12">
-          <h2>Column Offsets</h2>
-        </div>
-
-        <div class="column-xs-12">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-11 off-xs-1">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-10 off-xs-2">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-9 off-xs-3">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-8 off-xs-4">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-7 off-xs-5">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-6 off-xs-6">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-5 off-xs-7">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-4 off-xs-8">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-3 off-xs-9">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-2 off-xs-10">
-          <div class="item"></div>
-        </div>
-
-        <div class="column-xs-1 off-xs-11">
-          <div class="item"></div>
-        </div>
-
+    <div class="row">
+      <div class="column-xs-12">
+        <h2>buttons</h2>
       </div>
+      <div class="column-xs-2">
+        <a href="#" class="button red">Solid</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button blue">Solid</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button lime">Solid</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button pink">Solid</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button green">Solid</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button black">Solid</a>
+      </div>
+    </div>
 
-      <hr>
+    <div class="row">
+      <div class="column-xs-2">
+        <a href="#" class="button hollow red">Hollow</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button hollow blue">Hollow</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button hollow orange">Hollow</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button hollow yellow">Hollow</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button hollow green">Hollow</a>
+      </div>
+      <div class="column-xs-2">
+        <a href="#" class="button hollow purple">Hollow</a>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="column-xs-6">
+        <a href="" class="button lime icon-left"><i class="fa fa-star"></i>Icon Left</a>
+      </div>
+      <div class="column-xs-6">
+        <a href="" class="button primary icon-right">Icon Right <i class="fa fa-star"></i></a>
+      </div>
+    </div>
 
-      <div class="row">
-        <div class="column-xs-12">
-          <h2>burger menu</h2>
-          <a href="#" class="menu-button" id="menuButton">
-            <span class="burger-icon"></span>
-          </a>
+    <div class="row">
+      <div class="column-xs-6">
+        <a href="" class="button red pill">Pill</a>
+      </div>
+      <div class="column-xs-6">
+        <a href="" class="button blue pill">Pill</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="column-xs-12">
+        <h2>cards</h2>
+      </div>
+      <div class="column-xs-12">
+        <div class="card blue large">
+          <div class="card-icon">
+            <i class="fa fa-hand-lizard-o"></i>
+          </div>
+          <div class="left">
+            <div class="title">
+              <h3>My Profile</h3>
+              <p>Snowboard Stats</p>
+            </div>
+            <hr>
+            <ul class="list-reset">
+              <li><i class="fa fa-clock-o"></i> Quickest Runs <i class="fa fa-chevron-right"></i></li>
+              <li><i class="fa fa-list"></i> Total Runs <i class="fa fa-chevron-right"></i></li>
+              <li><i class="fa fa-check"></i> Trails Remaining <i class="fa fa-chevron-right"></i></li>
+            </ul>
+          </div>
+          <div class="right">
+            <img src="images/stock.jpg" alt="">
+            <a class="button white hollow" href="#">My Snowstats <i class="fa fa-chevron-right"></i></a>
+          </div>
         </div>
       </div>
 
-      <hr>
 
+      <div class="column-xs-6">
+        <div class="card green large">
+          <div class="card-icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="left">
+            <div class="title">
+              <h3>Bill Clinton</h3>
+              <p>Cares to befriend you.</p>
+            </div>
+            <div class="row">
+              <div class="column-xs-6">
+                <a href="#" class="button green hollow">Accept <i class="fa fa-check"></i></a>
+              </div>
+              <div class="column-xs-6">
+                <a href="#" class="button red hollow">Deny <i class="fa fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-xs-6">
+        <div class="card orange large">
+          <div class="card-icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="left">
+            <div class="title">
+              <h3>Joey Shmigeggy</h3>
+              <p>Cares to befriend you.</p>
+            </div>
+            <div class="row">
+              <div class="column-xs-6">
+                <a href="#" class="button green hollow">Accept <i class="fa fa-check"></i></a>
+              </div>
+              <div class="column-xs-6">
+                <a href="#" class="button red hollow">Deny <i class="fa fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="row">
+    <hr>
 
-        <div class="column-xs-12">
-          <h2>Responsitivity By Combining Namespaces</h2>
-          <p>Drag browser around to test responsive breakpoints.</p>
-        </div>
+    <div class="row">
 
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
-        <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
-          <div class="item"></div>
-        </div>
+      <div class="column-xs-12">
+        <h2>Grid</h2>
+      </div>
+
+      <div class="column-xs-12">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-11">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-2">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-10">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-3">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-9">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-4">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-8">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-5">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-7">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-6">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-7">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-5">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-8">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-4">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-9">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-3">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-10">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-2">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-11">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-1">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-12">
+        <div class="item"></div>
       </div>
 
     </div>
+
+
+    <hr>
+
+    <div class="row">
+      <div class="column-xs-12">
+        <h2>Column Offsets</h2>
+      </div>
+
+      <div class="column-xs-12">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-11 off-xs-1">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-10 off-xs-2">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-9 off-xs-3">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-8 off-xs-4">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-7 off-xs-5">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-6 off-xs-6">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-5 off-xs-7">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-4 off-xs-8">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-3 off-xs-9">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-2 off-xs-10">
+        <div class="item"></div>
+      </div>
+
+      <div class="column-xs-1 off-xs-11">
+        <div class="item"></div>
+      </div>
+
+    </div>
+
+    <hr>
+
+
+    <div class="row">
+
+      <div class="column-xs-12">
+        <h2>Combining Namespaces</h2>
+        <p>Drag browser around to test responsive breakpoints.</p>
+      </div>
+
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+      <div class="column-xs-6 column-sm-4 column-md-3 column-lg-1">
+        <div class="item"></div>
+      </div>
+    </div>
+
+    <hr>
+
 
     <div class="column-xs-12">
       <h2>Libs</h2>
@@ -373,27 +496,26 @@
         <li><a href="http://fontawesome.io" target="_blank">fontawesome</a></li>
       </ul>
     </div>
+  </div> <!-- end contain -->
 
-  </div>
+<div class="card full-width">
+  <h2>philosophy</h2>
+  <p>I always find myself using different scss setups for various projects. Burger is a combo of module sets I've used; built on a base.</p>
+  <p>Burger is intended to be a quick start scss template; useful for rapid prototyping and building an initial base for your project. </p>
+  <p>Burger isn't seasoned yet (v0.9), feel free to contribute any new condiments or toppings.</p>
+  <h3 class="center">¯\_(ツ)_/¯</h3>
+</div>
 
-  <div class="card">
-    <h2>philosophy</h2>
-    <p>I always find myself using different scss setups for various projects. Burger is a combo of module sets I've used; built on a base.</p>
-    <p>Burger is intended to be a quick start scss template; useful for rapid prototyping and building an initial base for your project. </p>
-    <p>Burger isn't seasoned yet (v0.9), feel free to contribute any new condiments or toppings.</p>
-    <h3 class="center">¯\_(ツ)_/¯</h3>
-  </div>
-
-  <footer>
-    <p>&copy; 2016 Mike Fortuna</p>
-    <p><a href="https://opensource.org/licenses/MIT">MIT License</a></p>
-  </footer>
-  <script>
-  var menuButton = document.getElementById('menuButton');
-  menuButton.addEventListener('click', function (e) {
-    menuButton.classList.toggle('is-active');
-    e.preventDefault();
-  });
-  </script>
+<footer>
+  <p>&copy; 2016 Mike Fortuna</p>
+  <p><a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+</footer>
+<script>
+var menuButton = document.getElementById('menuButton');
+menuButton.addEventListener('click', function (e) {
+  menuButton.classList.toggle('is-active');
+  e.preventDefault();
+});
+</script>
 </body>
 </html>

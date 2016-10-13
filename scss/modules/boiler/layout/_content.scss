@@ -57,7 +57,7 @@ p {
     }
 
     .item {
-      background-color: $tertiary;
+      background-color: $blue;
       border-radius: 2px;
       display: block;
       height: 2em;
@@ -65,7 +65,8 @@ p {
       width: 100%;
     }
     hr {
-      margin: 2em auto;
+      margin: 5em auto 0em;
+      opacity:0.35;
     }
     .contain {
       max-width: 45em;

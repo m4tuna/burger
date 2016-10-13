@@ -3,7 +3,30 @@
 // ==========================================================================
 
 
-// Buttons
+// Settings
+$default-button-padding: 0.6em 0;
+$default-border-radius: 2px;
+
+// Preset Button classes
+$btn-colors:  (
+  red: $red,
+  green: $green,
+  transparent: transparent,
+  black: $black,
+  blue: $blue,
+  white: $white,
+  yellow: $yellow,
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  purple: $purple,
+  pink: $pink,
+  orange: $orange,
+  grey: $grey,
+  lime: $lime,
+  brown: $brown
+);
+
 
 @mixin button($padding, $text-color, $bg-color, $border-color, $font, $border-radius, $hover-time) {
   color:$text-color;
@@ -17,27 +40,100 @@
   cursor:pointer;
   @include transition($hover-time all ease-in-out);
 }
+// init default button
+.button {
+  font-size:15px;
+  font-weight:300;
+  width:100%;
+  &:hover {
+    background-color:transparent;
+    color:$blue;
+  }
+  @each $name, $btn-color in $btn-colors {
+    &.#{$name} {
+      @include button($default-button-padding, $white , #{$btn-color}, #{$btn-color} , $sans, $default-border-radius, 0.35s);
+      font-weight:300;
+      border-bottom: 4px solid #{$btn-color};
+      &:hover {
+        background-color:transparent;
+        color:#{$btn-color};
+      }
+      &.hollow {
+        background-color:transparent;
+        border:1px solid #{$btn-color};
+        border-bottom: 4px solid #{$btn-color};
+        color:#{$btn-color};
+        i {
+          color:#{$btn-color};
+        }
+        &:hover {
+          background-color:#{$btn-color};
+        }
+      }
+      &.icon-right, &.icon-left {
+        &:hover {
+          border-color:#{$btn-color};
+          i {
+            background:transparent;
+            color:#{$btn-color};
+          }
+        }
+      }
+    }
+    .button-transparent {
+      &:hover {
+        color:#{$btn-color};
+      }
+    }
+  }
 
-// Preset Button classes
-$btn-colors:  (
-  red: $red,
-  green: $green,
-  black: $black,
-  blue: $blue,
-  white: $white,
-  yellow: $yellow,
-  primary: $primary,
-  secondary: $secondary,
-  tertiary: $tertiary,
-  purple: $purple,
-  pink: $pink,
-  orange: $orange,
-  grey: $grey,
-  brown: $brown
-);
+  // hollow buttons
+  &.hollow {
+    &:hover {
+      color:$white;
+      i {
+        color:$white;
+      }
+      &.white {
+        color:$black;
+        border-color:$black;
+        background:transparent;
+        i {
+          color:$black;
+        }
+      }
+    }
+  }
 
-@each $name, $btn-color in $btn-colors {
-  .button-#{$name} {
-    @include button(5px 10px, #{$btn-color} , transparent, #{$btn-color} , $sans, 2px, 0.35s);
+  // icon buttons
+  &.icon-right, &.icon-left {
+    position:relative;
+    @include transition(0.35s all ease-in-out);
+    border-bottom: 4px solid transparentize(#000, 0.75);
+    i {
+      background: transparentize(#000, 0.75);
+      @include flex-center(flex, column);
+      height: 100%;
+      width:2em;
+    }
+  }
+  &.icon-right {
+    i {
+      @include position(absolute, $right:0, $top:0);
+    }
+  }
+  &.icon-left {
+    i {
+      @include position(absolute, $left:0, $top:0);
+    }
+  }
+  // pill buttons
+  &.pill {
+    padding: $default-button-padding;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 12rem;
+    transition: color .3s,border .3s;
   }
 }
