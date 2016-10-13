@@ -109,7 +109,6 @@ $fg-breakpoints: (
   max-width: 100%;
 }
 
-
 /**
  * Generate a set of grid column classes using a namespace
  *
@@ -137,6 +136,10 @@ $fg-breakpoints: (
     .#{ $fg-class-col }-#{$namespace}-#{$i} {
       flex-basis: get-col-percent($i);
       max-width:  get-col-percent($i);
+      @include breakpoint(sm-only) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
     }
   }
 
