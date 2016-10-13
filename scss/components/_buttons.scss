@@ -24,7 +24,8 @@ $btn-colors:  (
   orange: $orange,
   grey: $grey,
   lime: $lime,
-  brown: $brown
+  brown: $brown,
+  navy: $navy
 );
 
 
@@ -89,6 +90,16 @@ $btn-colors:  (
 
   // hollow buttons
   &.hollow {
+    &.icon-right, &.icon-left {
+      i {
+        background:transparent;
+      }
+      &:hover {
+        i {
+          color:$white;
+        }
+      }
+    }
     &:hover {
       color:$white;
       i {

@@ -6848,8 +6848,8 @@ input[type="submit"] {
 
 .button.pink {
   color: #fff;
-  background: #FAD8D6;
-  border: 1px solid #FAD8D6;
+  background: #e479b9;
+  border: 1px solid #e479b9;
   padding: 0.6em 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
@@ -6860,40 +6860,40 @@ input[type="submit"] {
   -transition: 0.35s all ease-in-out;
   transition: 0.35s all ease-in-out;
   font-weight: 300;
-  border-bottom: 4px solid #FAD8D6;
+  border-bottom: 4px solid #e479b9;
 }
 
 .button.pink:hover {
   background-color: transparent;
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button.pink.hollow {
   background-color: transparent;
-  border: 1px solid #FAD8D6;
-  border-bottom: 4px solid #FAD8D6;
-  color: #FAD8D6;
+  border: 1px solid #e479b9;
+  border-bottom: 4px solid #e479b9;
+  color: #e479b9;
 }
 
 .button.pink.hollow i {
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button.pink.hollow:hover {
-  background-color: #FAD8D6;
+  background-color: #e479b9;
 }
 
 .button.pink.icon-right:hover, .button.pink.icon-left:hover {
-  border-color: #FAD8D6;
+  border-color: #e479b9;
 }
 
 .button.pink.icon-right:hover i, .button.pink.icon-left:hover i {
   background: transparent;
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button .button-transparent:hover {
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button.orange {
@@ -7094,6 +7094,64 @@ input[type="submit"] {
 
 .button .button-transparent:hover {
   color: #614126;
+}
+
+.button.navy {
+  color: #fff;
+  background: #324fb0;
+  border: 1px solid #324fb0;
+  padding: 0.6em 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.35s all ease-in-out;
+  -transition: 0.35s all ease-in-out;
+  transition: 0.35s all ease-in-out;
+  font-weight: 300;
+  border-bottom: 4px solid #324fb0;
+}
+
+.button.navy:hover {
+  background-color: transparent;
+  color: #324fb0;
+}
+
+.button.navy.hollow {
+  background-color: transparent;
+  border: 1px solid #324fb0;
+  border-bottom: 4px solid #324fb0;
+  color: #324fb0;
+}
+
+.button.navy.hollow i {
+  color: #324fb0;
+}
+
+.button.navy.hollow:hover {
+  background-color: #324fb0;
+}
+
+.button.navy.icon-right:hover, .button.navy.icon-left:hover {
+  border-color: #324fb0;
+}
+
+.button.navy.icon-right:hover i, .button.navy.icon-left:hover i {
+  background: transparent;
+  color: #324fb0;
+}
+
+.button .button-transparent:hover {
+  color: #324fb0;
+}
+
+.button.hollow.icon-right i, .button.hollow.icon-left i {
+  background: transparent;
+}
+
+.button.hollow.icon-right:hover i, .button.hollow.icon-left:hover i {
+  color: #fff;
 }
 
 .button.hollow:hover {
@@ -7728,8 +7786,8 @@ input[type="submit"] {
 
 .button.pink {
   color: #fff;
-  background: #FAD8D6;
-  border: 1px solid #FAD8D6;
+  background: #e479b9;
+  border: 1px solid #e479b9;
   padding: 0.6em 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
@@ -7740,40 +7798,40 @@ input[type="submit"] {
   -transition: 0.35s all ease-in-out;
   transition: 0.35s all ease-in-out;
   font-weight: 300;
-  border-bottom: 4px solid #FAD8D6;
+  border-bottom: 4px solid #e479b9;
 }
 
 .button.pink:hover {
   background-color: transparent;
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button.pink.hollow {
   background-color: transparent;
-  border: 1px solid #FAD8D6;
-  border-bottom: 4px solid #FAD8D6;
-  color: #FAD8D6;
+  border: 1px solid #e479b9;
+  border-bottom: 4px solid #e479b9;
+  color: #e479b9;
 }
 
 .button.pink.hollow i {
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button.pink.hollow:hover {
-  background-color: #FAD8D6;
+  background-color: #e479b9;
 }
 
 .button.pink.icon-right:hover, .button.pink.icon-left:hover {
-  border-color: #FAD8D6;
+  border-color: #e479b9;
 }
 
 .button.pink.icon-right:hover i, .button.pink.icon-left:hover i {
   background: transparent;
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button .button-transparent:hover {
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .button.orange {
@@ -7974,6 +8032,64 @@ input[type="submit"] {
 
 .button .button-transparent:hover {
   color: #614126;
+}
+
+.button.navy {
+  color: #fff;
+  background: #324fb0;
+  border: 1px solid #324fb0;
+  padding: 0.6em 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.35s all ease-in-out;
+  -transition: 0.35s all ease-in-out;
+  transition: 0.35s all ease-in-out;
+  font-weight: 300;
+  border-bottom: 4px solid #324fb0;
+}
+
+.button.navy:hover {
+  background-color: transparent;
+  color: #324fb0;
+}
+
+.button.navy.hollow {
+  background-color: transparent;
+  border: 1px solid #324fb0;
+  border-bottom: 4px solid #324fb0;
+  color: #324fb0;
+}
+
+.button.navy.hollow i {
+  color: #324fb0;
+}
+
+.button.navy.hollow:hover {
+  background-color: #324fb0;
+}
+
+.button.navy.icon-right:hover, .button.navy.icon-left:hover {
+  border-color: #324fb0;
+}
+
+.button.navy.icon-right:hover i, .button.navy.icon-left:hover i {
+  background: transparent;
+  color: #324fb0;
+}
+
+.button .button-transparent:hover {
+  color: #324fb0;
+}
+
+.button.hollow.icon-right i, .button.hollow.icon-left i {
+  background: transparent;
+}
+
+.button.hollow.icon-right:hover i, .button.hollow.icon-left:hover i {
+  color: #fff;
 }
 
 .button.hollow:hover {
@@ -8490,11 +8606,11 @@ input[type="submit"] {
 }
 
 .card.pink.large {
-  border-top: 2px solid #FAD8D6;
+  border-top: 2px solid #e479b9;
 }
 
 .card.pink.large .right {
-  background-color: #FAD8D6;
+  background-color: #e479b9;
 }
 
 .card.pink.large h3 {
@@ -8509,12 +8625,12 @@ input[type="submit"] {
 }
 
 .card.pink h3 {
-  color: #FAD8D6;
+  color: #e479b9;
 }
 
 .card.pink .card-icon {
-  background: #FAD8D6;
-  border-color: #FAD8D6;
+  background: #e479b9;
+  border-color: #e479b9;
 }
 
 .card.orange.large {
@@ -9052,7 +9168,7 @@ body.burger-docs h2 {
 }
 
 body.burger-docs h2, body.burger-docs h3, body.burger-docs h4 {
-  margin: 1em 0;
+  margin: 1em 0 0.5em;
 }
 
 body.burger-docs header {
