@@ -6,13 +6,6 @@
 A starter framework built using Flexbox and SCSS.
 
 
-Used to create starter SCSS themes for:
-- HTML Boilerplates
-- Ionic Apps
-- Reddit
-- Drupal 8 or Wordpress theming
-
-
 ### Setup
 After cloning repository, `cd` into the directory and install the packages
 
