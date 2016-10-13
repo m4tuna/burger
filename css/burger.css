@@ -10554,6 +10554,83 @@ body.mg-backdrop .mg-cloak {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.off-canvas-menu {
+  position: absolute;
+  width: 270px;
+  left: -270px;
+  -webkit-transform: translateX(-270px);
+          transform: translateX(-270px);
+  -webkit-transition: 0.2s all ease-in-out;
+  -transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  padding-top: 1em;
+  background: #fff;
+  height: 100%;
+}
+
+.off-canvas-menu li {
+  padding: 1em;
+  cursor: pointer;
+  color: #2e3c40;
+  font-size: 15px;
+}
+
+.off-canvas-menu li:hover {
+  color: #17BEBB;
+}
+
+.off-canvas-menu li.current {
+  color: #17BEBB;
+}
+
+.off-canvas-menu li i {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* body.offcanvas {
+
+  .dashboard { // content div
+    transform: translateX($offcanvas-width);
+  }
+
+} */
+body.offcanvas .dashboard {
+  left: 0;
+}
+
+body.offcanvas .off-canvas-menu {
+  -webkit-transform: translateX(270px);
+          transform: translateX(270px);
+  z-index: 999;
+}
+
+.dashboard {
+  -webkit-transition: 0.2s all ease-in-out;
+  -transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.offcanvas {
+  overflow: hidden;
+}
+
+.offcanvas .overlay {
+  background: rgba(46, 40, 42, 0.35);
+  -webkit-transition: 0.5s all ease-in-out;
+  -transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  position: fixed;
+  left: 270px;
+  top: 37px;
+  height: 100%;
+  width: 100%;
+  z-index: 888;
+  overflow-x: auto;
+}
+
 html, body {
   width: 100%;
   height: 100%;

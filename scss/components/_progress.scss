@@ -5,6 +5,7 @@
 	div.progressBar div {
 		width: $progress;
 		background: rgb(100% - $progress, $progress, 50%);
+		padding:1em;
 	}
 
 	div.progressBar div:after {
@@ -12,5 +13,7 @@
 	}
 
 }
+
+
 
 // see https://codepen.io/techsev/pen/nlszq

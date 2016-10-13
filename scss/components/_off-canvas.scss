@@ -1,0 +1,92 @@
+// off-canvas-menu
+
+$offcanvas-width: 270px;
+$push-content: false;
+$overlay-content: true;
+$fixed-when-open: false;
+
+// content and off canvas
+.off-canvas-menu {
+  position:absolute;
+  width:$offcanvas-width;
+  left:-$offcanvas-width;
+  transform: translateX(-$offcanvas-width);
+  @include transition(0.2s all ease-in-out);
+  padding-top:1em;
+  background:$white;
+  height:100%;
+  li {
+    padding:1em;
+    cursor:pointer;
+    color:#2e3c40;
+    font-size:15px;
+    &:hover {
+      color:$blue;
+    }
+    &.current {
+      color:$blue;
+    }
+    i {
+      margin-left:1em;
+      margin-right:1em;
+    }
+  }
+}
+
+@if $fixed-when-open {
+  body.offcanvas {
+    overflow-x:hidden;
+  }
+}
+
+// When open
+/* body.offcanvas {
+
+  .dashboard { // content div
+    transform: translateX($offcanvas-width);
+  }
+
+} */
+
+@if $push-content {
+  body.offcanvas {
+    .dashboard { // content div
+      transform: translateX($offcanvas-width);
+    }
+  }
+  .dashboard {
+    @include transition(0.2s all ease-in-out);
+    transform: translateX(0);
+  }
+} @else {
+  body.offcanvas {
+    .dashboard { // content div
+      left:0;
+    }
+    .off-canvas-menu {
+      transform: translateX($offcanvas-width);
+      z-index:999;
+    }
+  }
+  .dashboard {
+    @include transition(0.2s all ease-in-out);
+    transform: translateX(0);
+  }
+}
+
+@if $overlay-content {
+  .offcanvas {
+    overflow: hidden;
+    .overlay {
+      background: transparentize($black, .65);
+      @include transition(0.5s all ease-in-out);
+      position: fixed;
+      left: 270px;
+      top:37px;
+      height: 100%;
+      width: 100%;
+      z-index: 888;
+      overflow-x: auto;
+    }
+  }
+}
