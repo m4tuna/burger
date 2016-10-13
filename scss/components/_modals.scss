@@ -7,9 +7,9 @@ $modal-height: 500px;
 $modal-width: 500px;
 
 
-body.mg-backdrop {
+body.backdrop {
   overflow: hidden;
-  .mg-cloak {
+  .cloak {
     background: transparentize($black, .35);
     position: fixed;
     height: 100%;
@@ -19,7 +19,7 @@ body.mg-backdrop {
   }
 }
 
-.mg-modal {
+.modal {
   position: fixed;
   left: 0;
   right: 0;

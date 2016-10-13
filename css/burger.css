@@ -10520,11 +10520,11 @@ a.logo:hover {
   opacity: 0.7;
 }
 
-body.mg-backdrop {
+body.backdrop {
   overflow: hidden;
 }
 
-body.mg-backdrop .mg-cloak {
+body.backdrop .cloak {
   background: rgba(46, 40, 42, 0.65);
   position: fixed;
   height: 100%;
@@ -10533,7 +10533,7 @@ body.mg-backdrop .mg-cloak {
   overflow-x: auto;
 }
 
-.mg-modal {
+.modal {
   position: fixed;
   left: 0;
   right: 0;
@@ -10544,7 +10544,7 @@ body.mg-backdrop .mg-cloak {
   height: 400px;
 }
 
-.mg-modal .close-btn {
+.modal .close-btn {
   color: #fff;
   float: right;
   position: absolute;
@@ -10588,13 +10588,6 @@ body.mg-backdrop .mg-cloak {
   margin-right: 1em;
 }
 
-/* body.offcanvas {
-
-  .dashboard { // content div
-    transform: translateX($offcanvas-width);
-  }
-
-} */
 body.offcanvas .dashboard {
   left: 0;
 }
@@ -10677,4 +10670,58 @@ main {
           transform: translateZ(-0.25px) scale(1.25);
   z-index: -250;
   z-index: 7;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }

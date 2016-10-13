@@ -39,14 +39,6 @@ $fixed-when-open: false;
   }
 }
 
-// When open
-/* body.offcanvas {
-
-  .dashboard { // content div
-    transform: translateX($offcanvas-width);
-  }
-
-} */
 
 @if $push-content {
   body.offcanvas {
