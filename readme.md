@@ -13,7 +13,7 @@ Used to create starter SCSS themes for:
 - Drupal 8 or Wordpress theming
 
 
-###\ Setup
+### Setup
 After cloning repository, `cd` into the directory and install the packages
 
 ``npm install``
