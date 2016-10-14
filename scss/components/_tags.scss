@@ -13,6 +13,7 @@
 
   .tag {
     border:1px solid transparent;
+    font-family:$default-font;
     @each $name, $tag-color in $tag-colors {
       &.#{$name} {
         background-color: #{$tag-color};

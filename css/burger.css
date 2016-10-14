@@ -11488,6 +11488,7 @@ input:checked + .slider:before {
   border-bottom: 1px solid #eee;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .tabs .tab {
@@ -11549,6 +11550,7 @@ input:checked + .slider:before {
 
 .tags .tag {
   border: 1px solid transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 2px 0 0 2px;
   color: #fff;
   display: inline-block;
