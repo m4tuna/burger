@@ -9958,6 +9958,39 @@ body.burger-docs footer p {
   background: #fff;
 }
 
+.card.large.collapsed {
+  -webkit-transition: 0.25s all ease-in-out;
+  -transition: 0.25s all ease-in-out;
+  transition: 0.25s all ease-in-out;
+}
+
+.card.large.collapsed .left ul, .card.large.collapsed .left hr {
+  display: none;
+}
+
+.card.large.collapsed .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0;
+}
+
+.card.large.collapsed .right img {
+  display: none;
+}
+
 .card .card-icon {
   position: absolute;
   left: -30px;
@@ -10726,6 +10759,1406 @@ main {
   }
 }
 
+.progress-1 {
+  color: #fff;
+}
+
+.progress-1 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-1 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-2 {
+  color: #fff;
+}
+
+.progress-2 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-2 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-3 {
+  color: #fff;
+}
+
+.progress-3 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-3 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-4 {
+  color: #fff;
+}
+
+.progress-4 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-4 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-5 {
+  color: #fff;
+}
+
+.progress-5 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-5 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-6 {
+  color: #fff;
+}
+
+.progress-6 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-6 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-7 {
+  color: #fff;
+}
+
+.progress-7 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-7 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-8 {
+  color: #fff;
+}
+
+.progress-8 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-8 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-9 {
+  color: #fff;
+}
+
+.progress-9 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-9 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-10 {
+  color: #fff;
+}
+
+.progress-10 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-10 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-11 {
+  color: #fff;
+}
+
+.progress-11 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-11 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-12 {
+  color: #fff;
+}
+
+.progress-12 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-12 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-13 {
+  color: #fff;
+}
+
+.progress-13 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-13 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-14 {
+  color: #fff;
+}
+
+.progress-14 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-14 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-15 {
+  color: #fff;
+}
+
+.progress-15 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-15 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-16 {
+  color: #fff;
+}
+
+.progress-16 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-16 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-17 {
+  color: #fff;
+}
+
+.progress-17 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-17 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-18 {
+  color: #fff;
+}
+
+.progress-18 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-18 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-19 {
+  color: #fff;
+}
+
+.progress-19 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-19 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-20 {
+  color: #fff;
+}
+
+.progress-20 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-20 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-21 {
+  color: #fff;
+}
+
+.progress-21 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-21 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-22 {
+  color: #fff;
+}
+
+.progress-22 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-22 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-23 {
+  color: #fff;
+}
+
+.progress-23 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-23 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-24 {
+  color: #fff;
+}
+
+.progress-24 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-24 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-25 {
+  color: #fff;
+}
+
+.progress-25 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-25 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-26 {
+  color: #fff;
+}
+
+.progress-26 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-26 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-27 {
+  color: #fff;
+}
+
+.progress-27 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-27 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-28 {
+  color: #fff;
+}
+
+.progress-28 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-28 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-29 {
+  color: #fff;
+}
+
+.progress-29 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-29 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-30 {
+  color: #fff;
+}
+
+.progress-30 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-30 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-31 {
+  color: #fff;
+}
+
+.progress-31 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-31 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-32 {
+  color: #fff;
+}
+
+.progress-32 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-32 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-33 {
+  color: #fff;
+}
+
+.progress-33 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-33 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-34 {
+  color: #fff;
+}
+
+.progress-34 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-34 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-35 {
+  color: #fff;
+}
+
+.progress-35 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-35 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-36 {
+  color: #fff;
+}
+
+.progress-36 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-36 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-37 {
+  color: #fff;
+}
+
+.progress-37 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-37 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-38 {
+  color: #fff;
+}
+
+.progress-38 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-38 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-39 {
+  color: #fff;
+}
+
+.progress-39 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-39 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-40 {
+  color: #fff;
+}
+
+.progress-40 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-40 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-41 {
+  color: #fff;
+}
+
+.progress-41 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-41 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-42 {
+  color: #fff;
+}
+
+.progress-42 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-42 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-43 {
+  color: #fff;
+}
+
+.progress-43 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-43 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-44 {
+  color: #fff;
+}
+
+.progress-44 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-44 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-45 {
+  color: #fff;
+}
+
+.progress-45 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-45 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-46 {
+  color: #fff;
+}
+
+.progress-46 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-46 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-47 {
+  color: #fff;
+}
+
+.progress-47 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-47 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-48 {
+  color: #fff;
+}
+
+.progress-48 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-48 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-49 {
+  color: #fff;
+}
+
+.progress-49 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-49 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-50 {
+  color: #fff;
+}
+
+.progress-50 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-50 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-51 {
+  color: #fff;
+}
+
+.progress-51 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-51 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-52 {
+  color: #fff;
+}
+
+.progress-52 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-52 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-53 {
+  color: #fff;
+}
+
+.progress-53 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-53 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-54 {
+  color: #fff;
+}
+
+.progress-54 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-54 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-55 {
+  color: #fff;
+}
+
+.progress-55 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-55 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-56 {
+  color: #fff;
+}
+
+.progress-56 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-56 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-57 {
+  color: #fff;
+}
+
+.progress-57 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-57 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-58 {
+  color: #fff;
+}
+
+.progress-58 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-58 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-59 {
+  color: #fff;
+}
+
+.progress-59 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-59 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-60 {
+  color: #fff;
+}
+
+.progress-60 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-60 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-61 {
+  color: #fff;
+}
+
+.progress-61 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-61 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-62 {
+  color: #fff;
+}
+
+.progress-62 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-62 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-63 {
+  color: #fff;
+}
+
+.progress-63 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-63 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-64 {
+  color: #fff;
+}
+
+.progress-64 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-64 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-65 {
+  color: #fff;
+}
+
+.progress-65 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-65 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-66 {
+  color: #fff;
+}
+
+.progress-66 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-66 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-67 {
+  color: #fff;
+}
+
+.progress-67 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-67 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-68 {
+  color: #fff;
+}
+
+.progress-68 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-68 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-69 {
+  color: #fff;
+}
+
+.progress-69 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-69 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-70 {
+  color: #fff;
+}
+
+.progress-70 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-70 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-71 {
+  color: #fff;
+}
+
+.progress-71 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-71 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-72 {
+  color: #fff;
+}
+
+.progress-72 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-72 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-73 {
+  color: #fff;
+}
+
+.progress-73 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-73 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-74 {
+  color: #fff;
+}
+
+.progress-74 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-74 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-75 {
+  color: #fff;
+}
+
+.progress-75 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-75 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-76 {
+  color: #fff;
+}
+
+.progress-76 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-76 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-77 {
+  color: #fff;
+}
+
+.progress-77 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-77 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-78 {
+  color: #fff;
+}
+
+.progress-78 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-78 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-79 {
+  color: #fff;
+}
+
+.progress-79 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-79 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-80 {
+  color: #fff;
+}
+
+.progress-80 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-80 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-81 {
+  color: #fff;
+}
+
+.progress-81 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-81 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-82 {
+  color: #fff;
+}
+
+.progress-82 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-82 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-83 {
+  color: #fff;
+}
+
+.progress-83 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-83 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-84 {
+  color: #fff;
+}
+
+.progress-84 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-84 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-85 {
+  color: #fff;
+}
+
+.progress-85 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-85 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-86 {
+  color: #fff;
+}
+
+.progress-86 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-86 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-87 {
+  color: #fff;
+}
+
+.progress-87 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-87 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-88 {
+  color: #fff;
+}
+
+.progress-88 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-88 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-89 {
+  color: #fff;
+}
+
+.progress-89 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-89 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-90 {
+  color: #fff;
+}
+
+.progress-90 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-90 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-91 {
+  color: #fff;
+}
+
+.progress-91 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-91 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-92 {
+  color: #fff;
+}
+
+.progress-92 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-92 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-93 {
+  color: #fff;
+}
+
+.progress-93 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-93 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-94 {
+  color: #fff;
+}
+
+.progress-94 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-94 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-95 {
+  color: #fff;
+}
+
+.progress-95 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-95 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-96 {
+  color: #fff;
+}
+
+.progress-96 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-96 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-97 {
+  color: #fff;
+}
+
+.progress-97 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-97 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-98 {
+  color: #fff;
+}
+
+.progress-98 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-98 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-99 {
+  color: #fff;
+}
+
+.progress-99 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-99 div.progressBar div:after {
+  content: "20%";
+}
+
+.progress-100 {
+  color: #fff;
+}
+
+.progress-100 div.progressBar div {
+  width: 20%;
+  background: #cc3380;
+  padding: 1em;
+}
+
+.progress-100 div.progressBar div:after {
+  content: "20%";
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -10765,11 +12198,11 @@ main {
 }
 
 input:checked + .slider {
-  background-color: #806126;
+  background-color: #17BEBB;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #806126;
+  box-shadow: 0 0 1px #17BEBB;
 }
 
 input:checked + .slider:before {

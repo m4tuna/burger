@@ -40,14 +40,12 @@
   <div class="card full-width">
     <h2>about burger.scss</h2>
     <p>Burger is a lightweight starter framework built using Flexbox and SCSS.</p>
-    <p>Used to create starter SCSS for:</p>
+    <p>I use it to as my starter SCSS for theming:</p>
     <ul class="list-reset list-inline">
-      <li><i class="fa fa-html5"></i> HTML Boilerplate</li>
-      <li><a href="/splash.html"><i class="fa fa-html5"></i> HTML Boilerplate</a></li>
-      <li>Ionic</li>
+      <li><a href="/splash.html"><i class="fa fa-html5"></i> HTML Boilerplates</a></li>
       <li><i class="fa fa-reddit"></i> Reddit</li>
-      <li><i class="fa fa-drupal"></i> Drupal 8 (In progress)</li>
-      <li><i class="fa fa-wordpress"></i> Wordpress (In progress)</li>
+      <li><i class="fa fa-drupal"></i> Drupal 8 </li>
+      <li><i class="fa fa-wordpress"></i> Wordpress</li>
     </ul>
   </div>
 
@@ -163,6 +161,10 @@
     <div class="row">
       <div class="column-xs-12">
         <h2>cards</h2>
+        <label class="switch">
+          <input type="checkbox" id="openClose" checked>
+          <div class="slider round"></div>
+        </label>
       </div>
       <div class="column-xs-12">
         <div class="card blue large">
@@ -557,13 +559,8 @@
   <p>&copy; 2016 Mike Fortuna</p>
   <p><a href="https://opensource.org/licenses/MIT">MIT License</a></p>
 </footer>
-<script>
-var menuButton = document.getElementById('menuButton');
-menuButton.addEventListener('click', function (e) {
-  menuButton.classList.toggle('is-active');
-  e.preventDefault();
-});
-</script>
 <script src="https://use.fontawesome.com/4054a4e094.js"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="burger.js"></script>
 </body>
 </html>

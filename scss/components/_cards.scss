@@ -109,6 +109,21 @@ $card-right-width: 240px;
         background:$white;
       }
     }
+    &.collapsed {
+      @include transition(0.25s all ease-in-out);
+      .left {
+        ul, hr {
+          display: none;
+        }
+      }
+      .right {
+        @include flex-center(flex, column);
+        padding-bottom:0;
+        img {
+          display: none;
+        }
+      }
+    }
   }
   .card-icon {
     position:absolute;

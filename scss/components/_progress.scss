@@ -12,8 +12,14 @@
 		content: "#{round($progress)}"
 	}
 
-} 
+}
 
+@for $i from 1 through 100 {
+	.progress-#{$i} {
+		color:$white;
+		@include progressPercentage(20%);
+	}
+}
 
 
 // see https://codepen.io/techsev/pen/nlszq
