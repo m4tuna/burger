@@ -1,0 +1,40 @@
+.tabs {
+  border-bottom: 1px solid $color__border;
+  margin-bottom: 30px;
+  text-align: center;
+
+  .tab {
+    border-bottom: 3px solid transparent;
+    color: $grey;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+    margin-right: 30px;
+    min-width: 70px;
+    position: relative;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+
+    &.active {
+      border-bottom: 3px solid $primary;
+      color: $primary;
+    }
+  }
+  @each $name, $tab-color in $tab-colors {
+    &.#{$name} {
+      border-bottom: 3px solid #{$tab-color};
+      color: #{$tab-color};
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+
+  &.selected {
+    display: block;
+  }
+}

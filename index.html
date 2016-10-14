@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/css/burger.css">
 </head>
 <body class="burger-docs">
+  <div class="loading-bar hide"></div>
   <div class="header hide">
     <div class="left">
       burger.scss
@@ -238,6 +239,20 @@
     <hr>
 
     <div class="row">
+      <div class="column-xs-12">
+        <h2>Loading</h2>
+      </div>
+      <div class="column-xs-12">
+        <label class="switch">
+          <input type="checkbox" id="loading">
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
       <h2>Progress bar</h2>
       <div class="column-xs-12">
         <div class="progress-20">
@@ -252,13 +267,33 @@
 
     <div class="row">
       <div class="column-xs-12">
-        <h2>Switch</h2>
+        <h2>Tabs</h2>
       </div>
       <div class="column-xs-12">
-        <label class="switch">
-          <input type="checkbox">
-          <div class="slider round"></div>
-        </label>
+        <div class="tabs ">
+          <a href="#" title="Tab 1" class="tab">Tab 1</a>
+          <a href="#" title="Tab 2" class="tab active">Tab 2</a>
+          <a href="#" title="Tab 3" class="tab">Tab 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-xs-12">
+        <h2>Tags</h2>
+      </div>
+      <div class="column-xs-12">
+        <ul class="tags">
+          <li>
+            <a href="#" class="tag blue"> fantasy</a>
+          </li>
+          <li>
+            <a href="#" class="tag green"> fiction </a>
+          </li>
+          <li>
+            <a href="#" class="tag orange"> contemporary </a>
+          </li>
+        </ul>
       </div>
     </div>
 

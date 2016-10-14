@@ -6,3 +6,8 @@ menuButton.addEventListener('click', function (e) {
 $("#openClose").change(function() {
   $( ".card" ).toggleClass('collapsed');
 });
+
+$("#loading").change(function() {
+  $( ".loading-bar" ).toggleClass('hide');
+  $(this).parent().toggleClass('relative');
+});

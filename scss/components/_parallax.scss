@@ -1,7 +1,7 @@
 // ==========================================================================
 // Parallax
 // ==========================================================================
-
+$parallax-enabled: false;
 $parallax-perspective : 1 !default;
 $parallax-element     : "body" !default;
 $parallax-ios         : true !default;
@@ -48,8 +48,9 @@ $parallax-ios         : true !default;
   z-index: $distance * 1000;
 }
 
-
-@include parallax-init;
+@if $parallax-enabled {
+  @include parallax-init;
+}
 
 // Add to hero and main as examples
 

@@ -5394,6 +5394,19 @@
   display: none !important;
 }
 
+.tags {
+  /* *zoom: 1; */
+}
+
+.tags:before, .tags:after {
+  content: " ";
+  display: table;
+}
+
+.tags:after {
+  clear: both;
+}
+
 
 .center {
   text-align: center;
@@ -9566,6 +9579,81 @@ h1, h2, h3, h4, h5 {
   text-transform: lowercase;
 }
 
+/**
+ *  LOADING BAR
+ *
+ *  Markup:
+ *  ---------
+ *  <div class="loading-bar"></div>
+ *
+ */
+.loading-bar {
+  height: 4px;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.loading-bar::before {
+  -webkit-animation: loading 2s linear infinite;
+          animation: loading 2s linear infinite;
+  background-color: #806126;
+  content: '';
+  display: block;
+  height: 4px;
+  left: -200px;
+  position: absolute;
+  width: 200px;
+}
+
+@-webkit-keyframes loading {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes loading {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
 a.logo {
   display: inline-block;
   height: 62px;
@@ -9689,26 +9777,6 @@ body.offcanvas .off-canvas-menu {
   width: 100%;
   z-index: 888;
   overflow-x: auto;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-body {
-  overflow: auto;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-body, body * {
-  /* transform-style: preserve-3d; */
 }
 
 #hero {
@@ -11251,4 +11319,294 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.table {
+  background-color: #EDB88B;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  border-radius: 2px;
+  color: #000;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .table th,
+  .table td {
+    padding: 10px 20px;
+  }
+}
+
+.table td {
+  padding: 14px;
+  position: relative;
+}
+
+.table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.table thead {
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background-color: #806126;
+  color: #a6a6a6;
+  font-weight: normal;
+  padding: 5px 14px;
+  white-space: nowrap;
+}
+
+.table-vertical-center td {
+  vertical-align: middle;
+}
+
+/**
+ *  TABLE RESPONSIVE
+ *
+ *  Markup:
+ *  -------
+ *
+ *  <table class="table-responsive table-break-small">
+ *    <tr>
+ *      <th>First column</th>
+ *      <th>Second column</th>
+ *      <th>Third column</th>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Blue</td>
+ *      <td data-th="Second column">One</td>
+ *      <td data-th="Third column">My life fades</td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Green</td>
+ *      <td data-th="Second column">Two</td>
+ *      <td data-th="Third column">when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. </td>
+ *    </tr>
+ *    <tr>
+ *      <td data-th="First column">Yellow</td>
+ *      <td data-th="Second column">Three</td>
+ *      <td data-th="Third column">A whirlwind of looting, a firestorm of fear. Men began to feed on men. </td>
+ *    </tr>
+ *  </table>
+ *
+ */
+.table-responsive th {
+  display: none;
+}
+
+.table-responsive td {
+  display: block;
+}
+
+.table-responsive td:first-child {
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+}
+
+.table-responsive td:last-child {
+  padding-bottom: 14px;
+}
+
+.table-responsive td::before {
+  content: attr(data-th) ": ";
+  display: block;
+  font-weight: normal;
+}
+
+.table-responsive th,
+.table-responsive td {
+  text-align: left;
+}
+
+.table-responsive.table-break-medium tr {
+  border-top: 1px solid #eee;
+}
+
+@media (min-width: 992px) {
+  .table-responsive.table-break-medium td {
+    border: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .table-responsive.table-break-medium td::before {
+    display: none;
+  }
+}
+
+.table-responsive.table-break-medium td:last-child {
+  padding-bottom: 14px;
+}
+
+@media (min-width: 992px) {
+  .table-responsive.table-break-medium th,
+  .table-responsive.table-break-medium td {
+    display: table-cell;
+  }
+}
+
+.table-responsive.table-break-small tr {
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .table-responsive.table-break-small td {
+    border: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-responsive.table-break-small td::before {
+    display: none;
+  }
+}
+
+.table-responsive.table-break-small td:last-child {
+  padding-bottom: 14px;
+}
+
+@media (max-width: 767px) {
+  .table-responsive.table-break-small th,
+  .table-responsive.table-break-small td {
+    display: table-cell;
+  }
+}
+
+.tabs {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tabs .tab {
+  border-bottom: 3px solid transparent;
+  color: #a6a6a6;
+  display: inline-block;
+  line-height: 50px;
+  margin: 0;
+  margin-right: 30px;
+  min-width: 70px;
+  position: relative;
+}
+
+.tabs .tab:hover {
+  color: #806126;
+  text-decoration: none;
+}
+
+.tabs .tab.active {
+  border-bottom: 3px solid #806126;
+  color: #806126;
+}
+
+.tabs.active {
+  border-bottom: 3px solid #17BEBB;
+  color: #17BEBB;
+}
+
+.tabs.success {
+  border-bottom: 3px solid #22ce6d;
+  color: #22ce6d;
+}
+
+.tabs.transparent {
+  border-bottom: 3px solid transparent;
+  color: transparent;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.selected {
+  display: block;
+}
+
+.tags {
+  margin-bottom: 20px;
+}
+
+.tags:last-child {
+  margin-bottom: 0;
+}
+
+.tags li {
+  display: inline-block;
+  margin: 0 25px 10px 0;
+}
+
+.tags .tag {
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  line-height: 34px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.tags .tag.green {
+  background-color: #22ce6d;
+}
+
+.tags .tag.green:before {
+  border-left: 10px solid #22ce6d;
+}
+
+.tags .tag.blue {
+  background-color: #17BEBB;
+}
+
+.tags .tag.blue:before {
+  border-left: 10px solid #17BEBB;
+}
+
+.tags .tag.orange {
+  background-color: #e87d00;
+}
+
+.tags .tag.orange:before {
+  border-left: 10px solid #e87d00;
+}
+
+.tags .tag::before {
+  border-bottom: 17px solid transparent;
+  border-top: 17px solid transparent;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 0;
+}
+
+.tags .tag::after {
+  background: #fff;
+  border-radius: 6px;
+  content: '';
+  float: left;
+  height: 5px;
+  position: absolute;
+  right: -3px;
+  top: 14px;
+  width: 5px;
+}
+
+.tags a.tag {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
 }

@@ -42,6 +42,22 @@ $card-colors:  (
   orange: $orange
 );
 
+// Set tab colors here
+// The names will generate classes for each tab
+$tab-colors:  (
+  active: $blue,
+  success: $green,
+  transparent: transparent
+);
+
+// Set tag colors here
+// The names will generate classes for each tag
+$tag-colors:  (
+  green: $green,
+  blue: $blue,
+  orange: $orange
+);
+
 // Set theme color palatte
 $theme-colors: (
   burger: (

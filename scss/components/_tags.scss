@@ -1,0 +1,63 @@
+.tags {
+  @extend %clearfix;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 25px 10px 0;
+  }
+
+  .tag {
+    border:1px solid transparent;
+    @each $name, $tag-color in $tag-colors {
+      &.#{$name} {
+        background-color: #{$tag-color};
+        &:before {
+          border-left: 10px solid #{$tag-color};
+        }
+      }
+    }
+    border-radius: 2px 0 0 2px;
+    color: $white;
+    display: inline-block;
+    float: left;
+    line-height: 34px;
+    padding: 0 10px;
+    position: relative;
+
+    //triangle arrow
+    &::before {
+      border-bottom: 17px solid transparent;
+      border-top: 17px solid transparent;
+      content: '';
+      height: 0;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      width: 0;
+    }
+
+    // bullet
+    &::after {
+      background: $white;
+      border-radius: 6px;
+      content: '';
+      float: left;
+      height: 5px;
+      position: absolute;
+      right: -3px;
+      top: 14px;
+      width: 5px;
+    }
+  }
+
+  a.tag {
+    color: $white;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
