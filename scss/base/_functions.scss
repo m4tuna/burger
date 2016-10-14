@@ -10,8 +10,8 @@
   /// color variant is optional
   @if ($color-variant != null) {
     /// map inception
-    @return map-get(map-get($palettes, $color-name), $color-variant);
+    @return map-get(map-get($theme-colors, $color-name), $color-variant);
     } @else {
-      @return map-get($palettes, $color-name);
+      @return map-get($theme-colors, $color-name);
   }
 }

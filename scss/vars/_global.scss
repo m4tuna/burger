@@ -2,6 +2,9 @@
 // _global.scss
 
 $current_theme: 'light';
+$primary: #806126;
+$secondary: #d84f25;
+$tertiary: #5d9e47;
 
 $breakpoints: (
   'xs':  ( max-width:  300px ),
@@ -74,7 +77,7 @@ $default-font: $rail;
 $heading-font: $default-font;
 $nav-font: $default-font;
 
-//-standard colors
+//-colors
 $black: #2E282A;
 $blue: #17BEBB;
 $white: #fff;
@@ -88,6 +91,19 @@ $grey: #a6a6a6;
 $brown: #614126;
 $lime: #32cd32;
 $navy: #324fb0;
-$primary: #806126;
-$secondary: #d84f25;
-$tertiary: #5d9e47;
+
+//-light colors
+$light-purple: #F5F5FF;
+$light-blue: #588bcd;
+$light-brown: #c89863;
+$light-grey: #efefef;
+$light-green: #E3FFE6;
+$light-orange: #f8d148;
+
+//-other colors
+$off-white: #f4f6f8;
+$fb-blue: #495699;
+$tw-blue: #4099ff;
+$yt-red: #a8462a;
+$insta-blue: #455b84;
+$walmart-blue: #007cc2;

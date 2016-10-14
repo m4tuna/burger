@@ -1,73 +1,112 @@
 // ==========================================================================
 // Color Config
+// Burger.scss
+// Mike Fortuna
 // ==========================================================================
 
-//-light colors
-$light-purple: #F5F5FF;
-$light-blue: #588bcd;
-$light-brown: #c89863;
-$light-grey: #efefef;
-$light-green: #E3FFE6;
-$light-orange: #f8d148;
-
-//-other colors
-$off-white: #f4f6f8;
-$fb-blue: #495699;
-$tw-blue: #4099ff;
-$yt-red: #a8462a;
-$insta-blue: #455b84;
-$walmart-blue: #007cc2;
-
-$palettes: (
-    burger: (
-      border: #eee,
-      txt: #000,
-      link: #000,
-      link-hover: #000,
-      headers: #000,
-      body-bg: #EDB88B,
-      header-bg: #000,
-      sidebar-bg: #fff,
-      content-bg: transparent,
-      node-bg: #815632,
-      card-bg: #fff,
-      footer-bg: #000
-    ),
-    classic: (
-      border: #2f2f2f,
-      txt: #ccc,
-      link: #eee,
-      link-hover: #000,
-      headers: #fff,
-      body-bg: #19191a,
-      header-bg: #000,
-      sidebar-bg: #141415,
-      content-bg: #0f0f11,
-      node-bg: #0f0f11,
-      footer-bg: #000
-    ),
-    socials: (
-      facebook: #3b5998,
-      tumblr: #35465c,
-      google: #dd4b39,
-      googleplus: #dd4b39,
-      instagram: #517fa4,
-      lastfm: #d51007,
-      linkedin: #007bb6,
-      pinterest: #cb2027,
-      rdio: #0088da,
-      soundcloud: #f60,
-      twitter: #00aced,
-      youtube: #b00,
-      spotify: #6ae368,
-      foursquare: #0072b1,
-      deezer: #0f0f11,
-      email: #3f3f44
-    )
+// Set alert colors here
+// The names will generate classes for each alert
+$alert-colors:  (
+  error: $red,
+  success: $green,
+  transparent: transparent
 );
 
+// Set button colors here
+// The names will generate classes for each alert
+$btn-colors:  (
+  red: $red,
+  green: $green,
+  transparent: transparent,
+  black: $black,
+  blue: $blue,
+  white: $white,
+  yellow: $yellow,
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  purple: $purple,
+  pink: $pink,
+  orange: $orange,
+  grey: $grey,
+  lime: $lime,
+  brown: $brown,
+  navy: $navy
+);
+
+// Set alert colors here
+// The names will generate classes for each card
+$card-colors:  (
+  red: $red,
+  green: $green,
+  black: $black,
+  blue: $blue,
+  white: $white,
+  yellow: $yellow,
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  purple: $purple,
+  pink: $pink,
+  orange: $orange,
+  grey: $grey,
+  brown: $brown,
+  lime: $lime
+);
+
+
+// Set theme color palatte
+$theme-colors: (
+  burger: (
+    border: #eee,
+    txt: #000,
+    link: #000,
+    link-hover: #000,
+    headers: #000,
+    body-bg: #EDB88B,
+    header-bg: #000,
+    sidebar-bg: #fff,
+    content-bg: transparent,
+    node-bg: #815632,
+    card-bg: #fff,
+    footer-bg: #000
+  ),
+  classic: (
+    border: #2f2f2f,
+    txt: #ccc,
+    link: #eee,
+    link-hover: #000,
+    headers: #fff,
+    body-bg: #19191a,
+    header-bg: #000,
+    sidebar-bg: #141415,
+    content-bg: #0f0f11,
+    node-bg: #0f0f11,
+    footer-bg: #000
+  ),
+  socials: (
+    facebook: #3b5998,
+    tumblr: #35465c,
+    google: #dd4b39,
+    googleplus: #dd4b39,
+    instagram: #517fa4,
+    lastfm: #d51007,
+    linkedin: #007bb6,
+    pinterest: #cb2027,
+    rdio: #0088da,
+    soundcloud: #f60,
+    twitter: #00aced,
+    youtube: #b00,
+    spotify: #6ae368,
+    foursquare: #0072b1,
+    deezer: #0f0f11,
+    email: #3f3f44
+  )
+);
+
+
 /// Social Color Palette Map
-$socials: map-get($palettes, 'socials');
+$socials: map-get($theme-colors, 'socials');
 
 /// Theme Color Palette Map To Use - options: burger | classic
 /// @type Color

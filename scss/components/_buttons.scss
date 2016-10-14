@@ -7,28 +7,6 @@
 $default-button-padding: 0.6em 0;
 $default-border-radius: 2px;
 
-// Preset Button classes
-$btn-colors:  (
-  red: $red,
-  green: $green,
-  transparent: transparent,
-  black: $black,
-  blue: $blue,
-  white: $white,
-  yellow: $yellow,
-  primary: $primary,
-  secondary: $secondary,
-  tertiary: $tertiary,
-  purple: $purple,
-  pink: $pink,
-  orange: $orange,
-  grey: $grey,
-  lime: $lime,
-  brown: $brown,
-  navy: $navy
-);
-
-
 @mixin button($padding, $text-color, $bg-color, $border-color, $font, $border-radius, $hover-time) {
   color:$text-color;
   background: $bg-color;
