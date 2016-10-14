@@ -69,14 +69,6 @@ $asset_paths: (
 $asset_path: setPaths($setMode, asset_path);
 $base_url: setPaths($setMode, base_url);
 
-
-//-default fonts
-$sans: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-$rail: 'Raleway', sans-serif;
-$default-font: $rail;
-$heading-font: $default-font;
-$nav-font: $default-font;
-
 //-colors
 $black: #2E282A;
 $blue: #17BEBB;

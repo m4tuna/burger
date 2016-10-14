@@ -6911,7 +6911,7 @@ input[type="submit"] {
 }
 
 p, ul {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -9387,34 +9387,6 @@ body.burger-docs footer p {
           justify-content: center;
 }
 
-.card.red.large {
-  border-top: 2px solid #EF3E36;
-}
-
-.card.red.large .right {
-  background-color: #EF3E36;
-}
-
-.card.red.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.red.woman {
-  border: none;
-}
-
-.card.red h3 {
-  color: #EF3E36;
-}
-
-.card.red .card-icon {
-  background: #EF3E36;
-  border-color: #EF3E36;
-}
-
 .card.green.large {
   border-top: 2px solid #22ce6d;
 }
@@ -9441,34 +9413,6 @@ body.burger-docs footer p {
 .card.green .card-icon {
   background: #22ce6d;
   border-color: #22ce6d;
-}
-
-.card.black.large {
-  border-top: 2px solid #2E282A;
-}
-
-.card.black.large .right {
-  background-color: #2E282A;
-}
-
-.card.black.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.black.woman {
-  border: none;
-}
-
-.card.black h3 {
-  color: #2E282A;
-}
-
-.card.black .card-icon {
-  background: #2E282A;
-  border-color: #2E282A;
 }
 
 .card.blue.large {
@@ -9499,202 +9443,6 @@ body.burger-docs footer p {
   border-color: #17BEBB;
 }
 
-.card.white.large {
-  border-top: 2px solid #fff;
-}
-
-.card.white.large .right {
-  background-color: #fff;
-}
-
-.card.white.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.white.woman {
-  border: none;
-}
-
-.card.white h3 {
-  color: #fff;
-}
-
-.card.white .card-icon {
-  background: #fff;
-  border-color: #fff;
-}
-
-.card.yellow.large {
-  border-top: 2px solid #f5c100;
-}
-
-.card.yellow.large .right {
-  background-color: #f5c100;
-}
-
-.card.yellow.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.yellow.woman {
-  border: none;
-}
-
-.card.yellow h3 {
-  color: #f5c100;
-}
-
-.card.yellow .card-icon {
-  background: #f5c100;
-  border-color: #f5c100;
-}
-
-.card.primary.large {
-  border-top: 2px solid #806126;
-}
-
-.card.primary.large .right {
-  background-color: #806126;
-}
-
-.card.primary.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.primary.woman {
-  border: none;
-}
-
-.card.primary h3 {
-  color: #806126;
-}
-
-.card.primary .card-icon {
-  background: #806126;
-  border-color: #806126;
-}
-
-.card.secondary.large {
-  border-top: 2px solid #d84f25;
-}
-
-.card.secondary.large .right {
-  background-color: #d84f25;
-}
-
-.card.secondary.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.secondary.woman {
-  border: none;
-}
-
-.card.secondary h3 {
-  color: #d84f25;
-}
-
-.card.secondary .card-icon {
-  background: #d84f25;
-  border-color: #d84f25;
-}
-
-.card.tertiary.large {
-  border-top: 2px solid #5d9e47;
-}
-
-.card.tertiary.large .right {
-  background-color: #5d9e47;
-}
-
-.card.tertiary.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.tertiary.woman {
-  border: none;
-}
-
-.card.tertiary h3 {
-  color: #5d9e47;
-}
-
-.card.tertiary .card-icon {
-  background: #5d9e47;
-  border-color: #5d9e47;
-}
-
-.card.purple.large {
-  border-top: 2px solid #9b56b8;
-}
-
-.card.purple.large .right {
-  background-color: #9b56b8;
-}
-
-.card.purple.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.purple.woman {
-  border: none;
-}
-
-.card.purple h3 {
-  color: #9b56b8;
-}
-
-.card.purple .card-icon {
-  background: #9b56b8;
-  border-color: #9b56b8;
-}
-
-.card.pink.large {
-  border-top: 2px solid #e479b9;
-}
-
-.card.pink.large .right {
-  background-color: #e479b9;
-}
-
-.card.pink.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.pink.woman {
-  border: none;
-}
-
-.card.pink h3 {
-  color: #e479b9;
-}
-
-.card.pink .card-icon {
-  background: #e479b9;
-  border-color: #e479b9;
-}
-
 .card.orange.large {
   border-top: 2px solid #e87d00;
 }
@@ -9721,90 +9469,6 @@ body.burger-docs footer p {
 .card.orange .card-icon {
   background: #e87d00;
   border-color: #e87d00;
-}
-
-.card.grey.large {
-  border-top: 2px solid #a6a6a6;
-}
-
-.card.grey.large .right {
-  background-color: #a6a6a6;
-}
-
-.card.grey.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.grey.woman {
-  border: none;
-}
-
-.card.grey h3 {
-  color: #a6a6a6;
-}
-
-.card.grey .card-icon {
-  background: #a6a6a6;
-  border-color: #a6a6a6;
-}
-
-.card.brown.large {
-  border-top: 2px solid #614126;
-}
-
-.card.brown.large .right {
-  background-color: #614126;
-}
-
-.card.brown.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.brown.woman {
-  border: none;
-}
-
-.card.brown h3 {
-  color: #614126;
-}
-
-.card.brown .card-icon {
-  background: #614126;
-  border-color: #614126;
-}
-
-.card.lime.large {
-  border-top: 2px solid #32cd32;
-}
-
-.card.lime.large .right {
-  background-color: #32cd32;
-}
-
-.card.lime.large h3 {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.card.lime.woman {
-  border: none;
-}
-
-.card.lime h3 {
-  color: #32cd32;
-}
-
-.card.lime .card-icon {
-  background: #32cd32;
-  border-color: #32cd32;
 }
 
 .card .left {
@@ -9898,7 +9562,7 @@ input[type="text"].error, select.error {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: lowercase;
 }
 

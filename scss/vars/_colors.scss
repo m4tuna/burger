@@ -13,7 +13,7 @@ $alert-colors:  (
 );
 
 // Set button colors here
-// The names will generate classes for each alert
+// The names will generate classes for each button
 $btn-colors:  (
   red: $red,
   green: $green,
@@ -37,23 +37,10 @@ $btn-colors:  (
 // Set alert colors here
 // The names will generate classes for each card
 $card-colors:  (
-  red: $red,
   green: $green,
-  black: $black,
   blue: $blue,
-  white: $white,
-  yellow: $yellow,
-  primary: $primary,
-  secondary: $secondary,
-  tertiary: $tertiary,
-  purple: $purple,
-  pink: $pink,
-  orange: $orange,
-  grey: $grey,
-  brown: $brown,
-  lime: $lime
+  orange: $orange
 );
-
 
 // Set theme color palatte
 $theme-colors: (
