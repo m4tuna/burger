@@ -3,37 +3,35 @@
 // ==========================================================================
 
 //-mg-modal
-$modal-height: 500px;
+$modal-height: auto;
 $modal-width: 500px;
 
+// Modal
+.modal {
+  @include position(fixed, $left:0, $top:20%, $right:0);
+  @include flex-center(flex, column);
+  @include size($modal-width, $modal-height);
+  background:$white;
+  padding:2em;
+  margin: 0 auto;
+  z-index: 999;
+  text-align: center;
+  display: none;
+}
 
-body.backdrop {
+
+// Open modal
+body.modal-open {
   overflow: hidden;
-  .cloak {
+  .overlay {
     background: transparentize($black, .35);
-    position: fixed;
-    height: 100%;
-    width: 100%;
+    @include transition(0.25s all ease-in-out);
+    @include position(fixed);
+    @include size(100%);
     z-index: 888;
     overflow-x: auto;
   }
-}
-
-.modal {
-  position: fixed;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 4%;
-  z-index: 999;
-  @include size(400px);
-  .close-btn {
-    color: $white;
-    float: right;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-weight: 900;
-    font-family: $sans;
+  .modal {
+    display: flex;
   }
 }
