@@ -1,4 +1,7 @@
 /* The switch - the box around the slider */
+
+$switch-bg: $orange;
+
 .switch {
   position: relative;
   display: inline-block;
@@ -35,7 +38,7 @@
 }
 
 input:checked + .slider {
-  background-color: $blue;
+  background-color: $switch-bg;
 }
 
 input:focus + .slider {

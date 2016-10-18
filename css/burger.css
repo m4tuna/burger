@@ -7084,17 +7084,17 @@ body.burger-docs footer p {
 }
 
 .alert {
+  font-size: 15px;
+  font-weight: 300;
   width: 100%;
   height: auto;
   text-align: left;
   position: relative;
 }
 
-.alert .close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: rgba(46, 40, 42, 0.5);
+.alert:hover {
+  background-color: transparent;
+  color: #17BEBB;
 }
 
 .alert h3, .alert p {
@@ -7104,15 +7104,11 @@ body.burger-docs footer p {
   color: #fff;
 }
 
-.alert {
-  font-size: 15px;
-  font-weight: 300;
-  width: 100%;
-}
-
-.alert:hover {
-  background-color: transparent;
-  color: #17BEBB;
+.alert .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(46, 40, 42, 0.5);
 }
 
 .alert.error {
@@ -9601,7 +9597,7 @@ h1, h2, h3, h4, h5 {
 .loading-bar::before {
   -webkit-animation: loading 2s linear infinite;
           animation: loading 2s linear infinite;
-  background-color: #806126;
+  background-color: #e87d00;
   content: '';
   display: block;
   height: 4px;
@@ -11317,7 +11313,7 @@ main {
 }
 
 input:checked + .slider {
-  background-color: #17BEBB;
+  background-color: #e87d00;
 }
 
 input:focus + .slider {

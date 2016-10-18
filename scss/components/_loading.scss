@@ -6,6 +6,8 @@
  *  <div class="loading-bar"></div>
  *
  */
+$loading-bg: $orange;
+
 
 .loading-bar {
   height: 4px;
@@ -20,7 +22,7 @@
 
 .loading-bar::before {
   animation: loading 2s linear infinite;
-  background-color: $primary;
+  background-color: $loading-bg;
   content: '';
   display: block;
   height: 4px;

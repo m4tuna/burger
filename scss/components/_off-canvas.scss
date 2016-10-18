@@ -1,9 +1,10 @@
 // off-canvas-menu
 
 $offcanvas-width: 270px;
-$push-content: true;
-$overlay-content: true;
+$push-content: true; // Moves the content section when true
+$overlay-content: true; // Puts an overlay covering the content when side nav is open
 $fixed-when-open: false;
+$overlay-color: transparentize($black, .65);
 
 // content and off canvas
 .off-canvas-menu {
@@ -73,7 +74,7 @@ $fixed-when-open: false;
   .offcanvas {
     overflow: hidden;
     .overlay {
-      background: transparentize($black, .65);
+      background: $overlay-color;
       @include transition(0.5s all ease-in-out);
       position: fixed;
       left: 270px;
