@@ -1,7 +1,9 @@
-@mixin docs() {
+// boiler
+//
+
+@mixin burgerDocs() {
   body.burger-docs {
     background:$color__body-bg;
-    @include setLayout('triple');
     /* For demo only */
     header, footer {
       margin:1em auto;
@@ -24,7 +26,7 @@
       @include fp(font-size, 30, 50);
     }
     h2, h3, h4 {
-      margin: 1em 0;
+      margin: 1em 0 0.5em;
     }
     header {
       p {
@@ -51,9 +53,8 @@
       width: 100%;
     }
     hr {
-      margin: 2em auto;
-      opacity:0.4;
-      display: none;
+      margin: 5em auto 0em;
+      opacity:0.35;
     }
     .contain {
       max-width: 45em;
@@ -98,3 +99,5 @@
   }
 
 }
+
+@include burgerDocs();

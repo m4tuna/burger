@@ -3,7 +3,7 @@
 // Date: 10/3/2016
 
 // Global
-@import 'vars/global';
+@import 'global';
 
 // Libs
 @import 'libs/modernizr';
@@ -11,16 +11,15 @@
 @import 'libs/burger-menu';
 @import 'libs/animate/animate'; // Animate.scss
 @import 'libs/fa/font-awesome'; // Fontawesome.scss
-/* @import '../node_modules/brand-colors/dist/latest/scss/brand-colors.latest.scss'; */
 
-// Base
+// Base grid, functions, mixins, classes, reset
 @import 'base/base';
 
 // Vars
-@import 'vars/vars';
-
-// MODULES
-@import 'modules/boiler/boiler';
+@import 'theme/vars';
 
 // Components
 @import 'components/components';
+
+// Layout
+@import 'theme/layout';

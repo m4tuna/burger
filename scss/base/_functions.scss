@@ -15,3 +15,24 @@
       @return map-get($theme-colors, $color-name);
   }
 }
+
+///   set-custom-breakpoint mixin
+///   $custom-bp: set-custom--breakpoint(max-width 480px 4);
+///   .element {
+///     @include media($custom-bp) {
+///       @include span-columns(4);
+///     }
+///   }
+@function set-custom-breakpoint($query: $feature $value $columns, $total-columns: $grid-columns) {
+  @if length($query) == 1 {
+    $query: $default-feature nth($query, 1) $total-columns;
+  } @else if is-even(length($query)) {
+    $query: append($query, $total-columns);
+  }
+
+  @if is-not(belongs-to($query, $visual-grid-breakpoints)) {
+    $visual-grid-breakpoints: append($visual-grid-breakpoints, $query, comma) !global;
+  }
+
+  @return $query;
+}

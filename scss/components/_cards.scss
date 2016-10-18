@@ -2,9 +2,10 @@
 
 $color-coated-buttons: false;
 $card-right-width: 240px;
+$card-margin: 0;
 
 .card {
-  /* margin:$content-margin; */
+  margin:$card-margin;
   background: $color__card-bg;
   padding: 0.5em 2.5em 1em;
   margin: 1em auto;

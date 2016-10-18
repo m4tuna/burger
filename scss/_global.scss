@@ -20,13 +20,6 @@ $breakpoints: (
   'ie10-up': ( all and (-ms-high-contrast: none), (-ms-high-contrast: active) )
 ) !default;
 
-// Grid
-
-$grid-type: 'flex'; // flex or float
-$grid-columns: 12;
-$grid-column-gutter: 0 2%;
-$content-margin: 0;
-$content-padding: 2em 0 6em;
 
 // Asset paths
 

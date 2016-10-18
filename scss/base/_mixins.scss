@@ -1,6 +1,20 @@
 // burger
 // _mixins.scss
 
+
+// Flex Center
+// Flex-center option
+// $set-flex: flex, inline-flex
+// $direction: column, row etc
+@mixin flex-center($set-flex, $direction) {
+	display:$set-flex;
+	flex-direction:$direction;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+
 // setLayout
 @mixin setLayout($type) {
 	@if $type == null {

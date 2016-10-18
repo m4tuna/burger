@@ -2,25 +2,34 @@
 
 @import '../libs/flex-grid';
 
+$grid-type: 'flex'; // flex or float
 $row-margin: 1em -0.5rem;
+$grid-columns: 12;
+$grid-column-gutter: 0 2%;
 
 // Float Grid
+$content-margin: 0;
+$content-padding: 2em 0 6em;
+
 .row {
   margin: $row-margin;
 }
+
 $col-widths: ();
 
-@for $i from 1 through $grid-columns {
+@if $grid-type == 'float' {
+  @for $i from 1 through $grid-columns {
     @for $j from 1 through $i {
-        $w: ($j/$i);
+      $w: ($j/$i);
 
-        @if not index($col-widths, $w) {
-            .column-#{$j}-#{$i} {
-                width: $w * 100%;
-                padding:$grid-column-gutter;
-            }
-            $col-widths: append($col-widths, $w, comma);
+      @if not index($col-widths, $w) {
+        .column-#{$j}-#{$i} {
+          width: $w * 100%;
+          padding:$grid-column-gutter;
         }
+        $col-widths: append($col-widths, $w, comma);
+      }
 
     }
+  }
 }
