@@ -1,7 +1,7 @@
 // off-canvas-menu
 
 $offcanvas-width: 270px;
-$push-content: false;
+$push-content: true;
 $overlay-content: true;
 $fixed-when-open: false;
 
@@ -42,6 +42,9 @@ $fixed-when-open: false;
 
 @if $push-content {
   body.offcanvas {
+    .off-canvas-menu {
+      left:$offcanvas-width;
+    }
     .dashboard { // content div
       transform: translateX($offcanvas-width);
     }

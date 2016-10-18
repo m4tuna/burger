@@ -9761,14 +9761,13 @@ body.modal-open .modal {
   margin-right: 1em;
 }
 
-body.offcanvas .dashboard {
-  left: 0;
+body.offcanvas .off-canvas-menu {
+  left: 270px;
 }
 
-body.offcanvas .off-canvas-menu {
+body.offcanvas .dashboard {
   -webkit-transform: translateX(270px);
           transform: translateX(270px);
-  z-index: 999;
 }
 
 .dashboard {
